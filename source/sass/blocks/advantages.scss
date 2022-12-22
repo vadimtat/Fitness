@@ -1,0 +1,53 @@
+.advantages {
+  padding: 0 var(--side-offset, 20px);
+  padding-top: 120px;
+  padding-bottom: 235px;
+}
+
+.advantages__row {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.advantages__left-side {
+  max-width: 355px;
+}
+
+.advantages h2 {
+  font-family: 'Alumni Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.advantages h3 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #102654;
+}
+
+.advantages p {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #102654;
+}
+
+.advantages__right-side {}
+
+.advantages__image {}
