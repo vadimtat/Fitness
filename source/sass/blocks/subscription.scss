@@ -1,0 +1,29 @@
+.subscription {
+  padding: 0 var(--side-offset, 20px);
+  padding-top: 120px;
+  background: #F8F9FC;
+  padding-bottom: 120px;
+}
+
+.subscription__row {
+  position: relative;
+}
+
+.subscription__title {
+  margin: 0;
+  display: block;
+  text-align: center;
+  font-family: 'Alumni Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.subscription__image {
+  position: absolute;
+  right: -300px;
+  top: 350px;
+}

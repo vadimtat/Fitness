@@ -34,7 +34,8 @@ function createIframe() {
 }
 
 function generateURL() {
-  return "https://www.youtube.com/embed/9TZXsZItgdw";
+  let query = "?rel=0&showinfo=0&autoplay=1";
+  return "https://www.youtube.com/embed/9TZXsZItgdw?controls=0" + query;
 }
 export function initVideo() {
   findVideos();
