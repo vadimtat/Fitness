@@ -1,20 +1,20 @@
-.advantages {
+.information {
   padding: 0 var(--side-offset, 20px);
   padding-top: 120px;
   padding-bottom: 235px;
 }
 
-.advantages__row {
+.information__row {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
-.advantages__left-side {
+.information__left-side {
   max-width: 355px;
 }
 
-.advantages h2 {
+.information h2 {
   font-family: 'Alumni Sans';
   font-style: normal;
   font-weight: 600;
@@ -26,7 +26,7 @@
   color: #102654;
 }
 
-.advantages h3 {
+.information h3 {
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
@@ -37,7 +37,7 @@
   color: #102654;
 }
 
-.advantages p {
+.information p {
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 300;
@@ -48,6 +48,6 @@
   color: #102654;
 }
 
-.advantages__right-side {}
+.information__right-side {}
 
-.advantages__image {}
+.information__image {}
