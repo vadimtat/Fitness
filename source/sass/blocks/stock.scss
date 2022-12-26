@@ -1,0 +1,122 @@
+.stock {
+  padding: 0 var(--side-offset, 20px);
+  padding-bottom: 50px;
+}
+
+.stock__title {}
+
+.stock__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stock__left-block {
+  max-width: 560px;
+  display: flex;
+}
+
+.stock__promo {
+  display: flex;
+  flex-direction: column;
+  background: #ED0233;
+  padding: 45px;
+  max-width: 280px;
+}
+
+.stock__promo h4 {
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 156%;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.stock__promo h3 {
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 156%;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.stock__promo p {
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.stock__promo a {
+  display: inline-block;
+  margin-top: auto;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.stock__promo a::after {
+  content: "";
+  padding-top: 3px;
+  display: block;
+  width: 79px;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.stock__image {}
+
+.stock__right-block {
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stock-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 35px;
+  border: 7px solid transparent;
+  border-image: linear-gradient(top left, rgba(209, 10, 66, 1), rgba(0, 53, 159, 1));
+  border-image-slice: 1;
+}
+
+.stock-card h3 {
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  align-items: center;
+  color: #1C3374;
+}
+
+.stock-card p {
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: #1C3374;
+}
