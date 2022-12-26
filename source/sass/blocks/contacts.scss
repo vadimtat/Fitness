@@ -1,6 +1,31 @@
 .contacts {
+  position: relative;
   padding: 0 var(--side-offset, 20px);
-  padding-bottom: 100px;
+  padding-bottom: 70px;
+  --grad-stop: 50%;
+
+  // background: #102654;
+  // background: linear-gradient(left, #102654);
+  // background: linear-gradient(0deg, red 0%, red 33%, rgba(0, 166, 255, 1) 33%, rgba(0, 163, 255, 1) 66%, white 66%, white 100%);
+  // background-size: 50vh;
+  // background-position: left;
+  background: {
+    // color: #00b3ff;
+    image: linear-gradient(90deg, rgba(16,
+          38,
+          84,
+          1)var(--grad-stop), transparent var(--grad-stop));
+  }
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 0;
+  height: 1px;
+  background: #74819C;
 }
 
 .contacts__row {
@@ -10,7 +35,7 @@
 
 .form {
   max-width: 410px;
-  background: #102654;
+  // background: #102654;
 }
 
 .form h2 {
@@ -28,11 +53,50 @@
 .form__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.form__form input {
+  padding: 10px 0;
+  background: none;
+  max-width: 190px;
+  border: none;
+  border-bottom: 1px solid #74819C;
+  color: #FFFFFF;
+
+  &::placeholder {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+  }
 }
 
 .phone-us {}
 
-.form__button {}
+.form__button {
+  width: 100%;
+  padding: 21px 166px;
+  justify-content: center;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  background-color: inherit;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 
 .address {
   width: 100%;

@@ -2049,8 +2049,23 @@ button,
 }
 
 .contacts {
+  position: relative;
   padding: 0 var(--side-offset, 20px);
-  padding-bottom: 100px;
+  padding-bottom: 70px;
+  --grad-stop: 50%;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgb(16, 38, 84)), to(transparent));
+  background-image: -o-linear-gradient(left, rgb(16, 38, 84) var(--grad-stop), transparent var(--grad-stop));
+  background-image: linear-gradient(90deg, rgb(16, 38, 84) var(--grad-stop), transparent var(--grad-stop));
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 0;
+  height: 1px;
+  background: #74819C;
 }
 
 .contacts__row {
@@ -2064,7 +2079,6 @@ button,
 
 .form {
   max-width: 410px;
-  background: #102654;
 }
 
 .form h2 {
@@ -2088,6 +2102,109 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.form__form input {
+  padding: 10px 0;
+  background: none;
+  max-width: 190px;
+  border: none;
+  border-bottom: 1px solid #74819C;
+  color: #FFFFFF;
+}
+
+.form__form input::-webkit-input-placeholder {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.form__form input::-moz-placeholder {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.form__form input:-ms-input-placeholder {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.form__form input::-ms-input-placeholder {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.form__form input::placeholder {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.form__button {
+  width: 100%;
+  padding: 21px 166px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  background-color: inherit;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
 }
 
 .address {
@@ -2191,6 +2308,63 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.footer {
+  padding: 0 var(--side-offset, 20px);
+  background: #030A1A;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.footer a {
+  color: #FFFFFF;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer__nav {
+  max-width: 550px;
+}
+
+.footer__list {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer__list li {
+  margin-right: 40px;
+}
+
+.footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__socials a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 11px;
+}
+
+.footer__socials a:last-child {
+  margin-right: 0;
 }
 
 /* @mixin hover-focus {
