@@ -4,14 +4,49 @@
   display: flex;
   margin: 0 auto;
   margin-bottom: 10px;
-  max-width: 313px;
+  max-width: 341px;
   margin-top: 5px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+
+  @media (max-width: 1199px) {
+    max-width: 333px;
+    margin: 8px auto 10px;
+    border-bottom: 2px solid rgba(120, 120, 120, .2);
+  }
+
+  @media (max-width: 767px) {
+    max-width: 290px;
+    margin: 11px auto 10px;
+  }
+}
+
+.tabs__list a {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+
+  display: flex;
+  align-items: center;
+
+  color: rgba(16, 38, 84, 0.5);
+
+  @media (max-width: 1199px) {
+    font-size: 18px;
+    align-items: center;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
 }
 
 .tabs__item {
   position: relative;
-  padding: 20px 0;
+  padding: 11px 0;
 }
 
 .tabs__item--active {
@@ -22,31 +57,145 @@
   position: absolute;
 }
 
-.tabs__item+.tabs__item {
-  margin-left: 46px;
+.tabs__item {
+  margin-right: 46px;
+
+  @media (max-width: 1199px) {
+    margin-right: 55px;
+  }
+
+  @media (max-width: 767px) {
+    margin-right: 45px;
+  }
 }
 
-.tabs__body {}
+.tabs__item:last-child {
+  margin-right: 0;
+}
+
+.tabs__body {
+  margin-top: 40px;
+
+  @media (max-width: 1199px) {
+    margin-top: 44px;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 34px;
+  }
+}
 
 .tabs__block {
   display: none;
   justify-content: space-between;
 }
 
-.tabs__block:target {
+.tabs__block--active {
   display: flex;
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+  }
 }
 
 .tabs__card {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 61px 63px;
+  padding: 40px;
   width: 100%;
   max-width: 360px;
   background: #FFFFFF;
   border: 7px solid #FFFFFF;
   z-index: 2;
+
+  @media (max-width: 1199px) {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 442px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 35px;
+  }
+}
+
+.tabs__card:last-child {
+  @media (max-width: 1199px) {
+    margin-bottom: 0;
+  }
+}
+
+.tabs__card h3 {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  align-items: center;
+  text-align: center;
+  color: #102654;
+
+  @media (max-width: 1199px) {
+    margin-top: 16px;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 24px;
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+}
+
+.tabs__price {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  margin-top: 47px;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 150%;
+  align-items: center;
+  color: #103AAE;
+  z-index: 2;
+
+  @media (max-width: 767px) {
+    margin: 36px auto 0;
+    font-size: 48px;
+    line-height: 150%;
+  }
+}
+
+.tabs__icon {
+  @media (max-width: 767px) {
+    width: 24px;
+    height: 33px;
+  }
+}
+
+.tabs__icon {
+  margin-left: 14px;
+
+  @media (max-width: 767px) {
+    margin-left: 11px;
+  }
+}
+
+.tabs__card p {
+  margin-top: 11px;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  align-items: center;
+  color: #495A7D;
 }
 
 .tabs__card:hover {
@@ -61,24 +210,9 @@
   }
 }
 
-.tabs__price {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 150%;
-  display: flex;
-  align-items: center;
-  color: #103AAE;
-  z-index: 2;
-}
-
 .tabs__price-shadow {
-  bottom: 1px;
-  left: -26px;
+  bottom: -7px;
+  left: -19px;
   position: absolute;
   font-family: 'Roboto Condensed';
   font-style: normal;
@@ -90,11 +224,20 @@
   color: #E8E8E8;
   opacity: 0.48;
   z-index: -2;
+
+  @media (max-width: 767px) {
+    bottom: -4px;
+    left: -15px;
+    font-size: 80px;
+  }
 }
 
 .tabs__button {
   display: block;
-  padding: 27px 42px;
+  max-width: 206px;
+  margin: 0 auto;
+  margin-top: 33px;
+  padding: 25px 42px;
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
@@ -106,4 +249,12 @@
   text-transform: uppercase;
   color: #102654;
   border: 2px solid #102654;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 1199px) {
+    margin: 30px auto 25px;
+  }
 }

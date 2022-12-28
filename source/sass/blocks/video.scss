@@ -1,9 +1,26 @@
 .video {
   position: absolute;
   width: 364px;
-  top: 270px;
-  left: 437px;
+  height: 228px;
+  top: 289px;
+  left: -10%;
   background: rgba(20, 54, 122, 0.5);
+
+  @media (max-width: 1199px) {
+    width: 267px;
+    height: 167px;
+    left: 30.3%;
+    top: 261px;
+  }
+
+  @media (max-width: 767px) {
+    position: static;
+    display: flex;
+    margin: 0 auto;
+    width: 320px;
+    height: 167px;
+    margin-top: 40px;
+  }
 }
 
 .video__overlay {
@@ -24,9 +41,13 @@
 .video__wrapper {
   position: relative;
   width: 100%;
-  height: 0;
+  height: 100%;
   padding-bottom: 56.25%;
   background-color: #000000;
+
+  @media (max-width: 767px) {
+    padding-bottom: 52.25%;
+  }
 }
 
 .video__link {
@@ -57,6 +78,11 @@
   background-color: transparent;
   transform: translate(-50%, -50%);
   cursor: pointer;
+
+  @media (max-width: 1199px) {
+    width: 73px;
+    height: 73px;
+  }
 }
 
 /* Enabled */
