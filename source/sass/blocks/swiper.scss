@@ -1,9 +1,25 @@
-.swiper {}
+.swiper {
+  width: 100%;
+
+  @media (max-width: 1199px) {
+    max-width: 565px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 226px;
+  }
+
+}
 
 .swiper-wrapper {
-  width: 100%;
+  // width: 100%;
   display: flex;
-  justify-content: space-between;
+
+  // justify-content: space-between;
 }
 
 .swiper-slide {}
+
+// .swiper-button-prev {
+//   position: absolute;
+// }

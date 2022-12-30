@@ -12,11 +12,12 @@
   }
 
   width: 260px;
-  min-height: 294px;
+  height: 294px;
 
   &:hover,
   &:focus-within {
     background: rgba(16, 38, 84, 0.89);
+    padding: 50px 20px;
   }
 
   &:hover .trainer-card__title,
@@ -29,6 +30,19 @@
   &:focus-within .trainer-card__info {
     opacity: 1;
     transform: none;
+  }
+
+  @media (max-width: 1199px) {
+    width: 268px;
+  }
+
+  @media (max-width: 767px) {
+    width: 226px;
+    height: 274px;
+
+    &:hover {
+      padding: 42px 20px;
+    }
   }
 }
 
@@ -43,12 +57,14 @@
 
 .trainer-card__title {
   margin: 0;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.5;
-  font-weight: 500;
   z-index: 1;
   text-align: center;
-  transform: translateY(294px - 80px);
+  transform: translateY(294px - 70px);
 
   transition: {
     property: transform;
@@ -78,14 +94,15 @@
 }
 
 .trainer-card__info {
-  list-style: none;
-  padding: 0;
-  padding-left: 47px;
   margin: 0;
+  margin-top: 29px;
+  list-style-type: disc;
+  padding: 0;
+  padding-left: 50px;
   font-size: 14px;
   line-height: 1.4;
   opacity: 0;
-  transform: translateY(386px);
+  transform: translateY(294px);
   opacity: 0;
 
   transition: {
@@ -93,10 +110,14 @@
     duration: 0.3s, 1s;
     timing-function: ease-in-out;
   }
+
+  @media (max-width: 767px) {
+    padding: 0 0 0 30px;
+  }
 }
 
 .trainer-card__value {
-  margin-top: 24px;
+  margin-top: 13px;
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
