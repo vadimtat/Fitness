@@ -2195,7 +2195,7 @@ button,
 .comment {
   padding: 0 var(--side-offset, 20px);
   padding-top: 22px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 }
 
 .comment__title {
@@ -2285,7 +2285,7 @@ button,
 .contacts {
   position: relative;
   padding: 0 var(--side-offset, 20px);
-  padding-bottom: 70px;
+  padding-bottom: 64px;
   --grad-stop: 50%;
   overflow: hidden;
   background-image: -webkit-gradient(linear, left top, right top, from(rgb(16, 38, 84)), to(transparent));
@@ -2317,6 +2317,8 @@ button,
 }
 
 .form h2 {
+  margin-top: 55px;
+  margin-bottom: 16px;
   font-family: "Alumni Sans";
   font-style: normal;
   font-weight: 800;
@@ -2341,7 +2343,7 @@ button,
 }
 
 .form__form input {
-  padding: 10px 0;
+  padding: 5px 0;
   background: none;
   max-width: 190px;
   border: none;
@@ -2416,7 +2418,7 @@ button,
 
 .form__button {
   width: 100%;
-  padding: 21px 166px;
+  padding: 16px 20px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2445,9 +2447,12 @@ button,
 .address {
   width: 100%;
   max-width: 404px;
+  margin-right: 56px;
 }
 
 .address h2 {
+  margin-top: 57px;
+  margin-bottom: 37px;
   font-family: "Alumni Sans";
   font-style: normal;
   font-weight: 600;
@@ -2476,8 +2481,8 @@ button,
 .address__row::before {
   position: absolute;
   content: "";
-  left: 60%;
-  bottom: 0;
+  left: 58%;
+  bottom: 6%;
   width: 2px;
   height: 102px;
   background: #74819C;
@@ -2497,7 +2502,12 @@ button,
 }
 
 .address__card {
+  margin-left: 4px;
   display: block;
+}
+
+.address__card + .address__card {
+  margin-top: 18px;
 }
 
 .address__card h4 {
@@ -2518,6 +2528,24 @@ button,
 
 .address__card p {
   margin: 0;
+  margin-top: 3px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #102654;
+}
+
+.address__card a {
+  margin: 0;
+  margin-top: 3px;
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
@@ -3099,6 +3127,7 @@ button,
 
   .comment {
     padding-top: 7px;
+    padding-bottom: 100px;
   }
 
   .comment__title {
@@ -3110,6 +3139,81 @@ button,
   .comment__block {
     padding: 40px 65px;
     max-width: 566px;
+  }
+
+  .contacts {
+    min-height: 648px;
+    padding-bottom: 35px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(16, 38, 84)), to(transparent));
+    background-image: -o-linear-gradient(top, rgb(16, 38, 84) var(--grad-stop), transparent var(--grad-stop));
+    background-image: linear-gradient(180deg, rgb(16, 38, 84) var(--grad-stop), transparent var(--grad-stop));
+  }
+
+  .contacts::before {
+    display: none;
+  }
+
+  .contacts__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .form {
+    max-width: 474px;
+    margin-left: 87px;
+  }
+
+  .form h2 {
+    margin-top: 62px;
+    margin-bottom: 31px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .form__form {
+    gap: 60px;
+    row-gap: 28px;
+  }
+
+  .form__form input {
+    max-width: 206px;
+  }
+
+  .address {
+    margin-top: 74px;
+    margin-left: 84px;
+    max-width: 460px;
+  }
+
+  .address h2 {
+    margin-left: 4px;
+    margin-bottom: 32px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .address__row::before {
+    height: 129px;
+    left: 58.5%;
+  }
+
+  .address__card h4 {
+    font-size: 20px;
+  }
+
+  .address__card p {
+    margin: 6px 0 0;
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+
+  .address__card a {
+    margin: 6px 0 0;
+    font-size: 18px;
+    line-height: 152.34%;
   }
 }
 
@@ -3530,6 +3634,10 @@ button,
     margin-top: 25px;
   }
 
+  .comment {
+    padding-bottom: 70px;
+  }
+
   .comment__title {
     margin-top: 7px;
     margin-bottom: 42px;
@@ -3570,6 +3678,70 @@ button,
   .comment__text p {
     margin-bottom: 0;
     text-align: center;
+  }
+
+  .contacts {
+    --grad-stop: 44.5%;
+  }
+
+  .form {
+    width: 100%;
+    margin: 0 auto;
+    max-width: none;
+  }
+
+  .form h2 {
+    margin-top: 64px;
+    margin-bottom: 33px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .form__form {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 31px;
+  }
+
+  .form__form input {
+    max-width: none;
+  }
+
+  .form__button {
+    margin-top: 8px;
+    -ms-grid-column-span: 2;
+    grid-column-end: 2;
+  }
+
+  .address {
+    margin: 133px 0 0;
+  }
+
+  .address h2 {
+    margin: 0;
+    margin-bottom: 34px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .address__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .address__row::before {
+    display: none;
+  }
+
+  .address__card {
+    margin-left: 0;
+  }
+
+  .adress__right__block {
+    margin-top: 20px;
   }
 }
 
