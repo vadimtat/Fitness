@@ -14,7 +14,8 @@
 
   @media (max-width: 1199px) {
     min-height: 648px;
-    padding-bottom: 35px;
+    padding-bottom: 61px;
+    --grad-stop: 48%;
 
     background: {
       image: linear-gradient(180deg, rgba(16,

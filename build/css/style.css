@@ -2576,8 +2576,8 @@ button,
 .footer {
   padding: 0 var(--side-offset, 20px);
   background: #030A1A;
-  padding-top: 42px;
-  padding-bottom: 42px;
+  padding-top: 27px;
+  padding-bottom: 28px;
 }
 
 .footer a {
@@ -2596,8 +2596,22 @@ button,
   align-items: center;
 }
 
+.footer__logo {
+  margin-top: 12px;
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
 .footer__nav {
-  max-width: 550px;
+  width: 500px;
 }
 
 .footer__list {
@@ -2609,8 +2623,23 @@ button,
   flex-wrap: wrap;
 }
 
+.footer__list a {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
 .footer__list li {
-  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .footer__socials {
@@ -3143,7 +3172,8 @@ button,
 
   .contacts {
     min-height: 648px;
-    padding-bottom: 35px;
+    padding-bottom: 61px;
+    --grad-stop: 48%;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(16, 38, 84)), to(transparent));
     background-image: -o-linear-gradient(top, rgb(16, 38, 84) var(--grad-stop), transparent var(--grad-stop));
     background-image: linear-gradient(180deg, rgb(16, 38, 84) var(--grad-stop), transparent var(--grad-stop));
@@ -3214,6 +3244,24 @@ button,
     margin: 6px 0 0;
     font-size: 18px;
     line-height: 152.34%;
+  }
+
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 32px;
+  }
+
+  .footer__logo {
+    margin-top: 0;
+    font-size: 24px;
+  }
+
+  .footer__nav {
+    width: 434px;
+  }
+
+  .footer__list li {
+    margin-left: 30px;
   }
 }
 
@@ -3742,6 +3790,39 @@ button,
 
   .adress__right__block {
     margin-top: 20px;
+  }
+
+  .footer__row {
+    position: relative;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    position: absolute;
+  }
+
+  .footer__list {
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-height: 200px;
+  }
+
+  .footer__list li {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .footer__list li:first-child {
+    margin-top: 80px;
   }
 }
 
