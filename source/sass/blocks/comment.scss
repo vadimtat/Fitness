@@ -1,9 +1,15 @@
 .comment {
   padding: 0 var(--side-offset, 20px);
+  padding-top: 22px;
   padding-bottom: 100px;
+
+  @media (max-width: 1199px) {
+    padding-top: 7px;
+  }
 }
 
 .comment__title {
+  margin-bottom: 37px;
   justify-content: center;
   font-family: 'Alumni Sans';
   font-style: normal;
@@ -14,32 +20,82 @@
   align-items: center;
   letter-spacing: 0.03em;
   color: #102654;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 40px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 7px;
+    margin-bottom: 42px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
 }
 
 .comment__row {}
 
 .comment__block {
   margin: 0 auto;
-  padding: 62px;
+  padding: 40px 62px;
   display: flex;
   max-width: 560px;
   background: #1C3374;
   box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+
+  @media (max-width: 1199px) {
+    padding: 40px 65px;
+    max-width: 566px;
+  }
+
+  @media (max-width: 767px) {
+    position: relative;
+    padding: 25px;
+    max-width: 226px;
+    min-height: 335px;
+  }
 }
 
 .comment__image img {
   margin-right: 28px;
-  min-width: 80px;
-  min-height: 80px;
   border-radius: 50%;
+
+  @media (max-width: 767px) {
+    margin-right: 0;
+  }
+}
+
+.comment__image {
+  display: block;
+  margin-top: 22px;
+  width: 80px;
+  height: 80px;
+
+  @media (max-width: 767px) {
+    position: absolute;
+    margin-top: 0;
+    top: 40px;
+    left: 41px;
+    width: 68px;
+    height: 68px;
+  }
 }
 
 .comment__text {
   max-width: 328px;
+  margin-left: 28px;
+
+  @media (max-width: 767px) {
+    margin-left: 0;
+  }
 }
 
 .comment__text h4 {
   margin: 0;
+  margin-top: 14px;
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
@@ -48,10 +104,18 @@
   display: flex;
   align-items: center;
   color: #FFFFFF;
+
+  @media (max-width: 767px) {
+    margin: 23px 15px 23px auto;
+    line-height: 130%;
+    max-width: 62px;
+  }
 }
 
 .comment__text p {
   margin: 0;
+  margin-top: 13px;
+  margin-bottom: 16px;
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
@@ -60,4 +124,9 @@
   display: flex;
   align-items: center;
   color: #FFFFFF;
+
+  @media (max-width: 767px) {
+    margin-bottom: 0;
+    text-align: center;
+  }
 }

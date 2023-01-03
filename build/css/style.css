@@ -2018,6 +2018,7 @@ button,
 
 .stock__left-block {
   max-width: 560px;
+  max-height: 462px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2043,9 +2044,6 @@ button,
   font-weight: 700;
   font-size: 28px;
   line-height: 156%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2059,9 +2057,6 @@ button,
   font-weight: 700;
   font-size: 70px;
   line-height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2104,6 +2099,13 @@ button,
   display: block;
   width: 79px;
   border-bottom: 1px solid #FFFFFF;
+}
+
+.stock__image img {
+  min-width: 280px;
+  height: 462px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .stock__right-block {
@@ -2192,10 +2194,12 @@ button,
 
 .comment {
   padding: 0 var(--side-offset, 20px);
+  padding-top: 22px;
   padding-bottom: 100px;
 }
 
 .comment__title {
+  margin-bottom: 37px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2216,7 +2220,7 @@ button,
 
 .comment__block {
   margin: 0 auto;
-  padding: 62px;
+  padding: 40px 62px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2228,17 +2232,24 @@ button,
 
 .comment__image img {
   margin-right: 28px;
-  min-width: 80px;
-  min-height: 80px;
   border-radius: 50%;
+}
+
+.comment__image {
+  display: block;
+  margin-top: 22px;
+  width: 80px;
+  height: 80px;
 }
 
 .comment__text {
   max-width: 328px;
+  margin-left: 28px;
 }
 
 .comment__text h4 {
   margin: 0;
+  margin-top: 14px;
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
@@ -2255,6 +2266,8 @@ button,
 
 .comment__text p {
   margin: 0;
+  margin-top: 13px;
+  margin-bottom: 16px;
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
@@ -2921,6 +2934,7 @@ button,
 
   .advantages {
     padding-top: 92px;
+    padding-bottom: 90px;
   }
 
   .advantages__title {
@@ -3039,6 +3053,63 @@ button,
 
   .advantages__row::after {
     display: none;
+  }
+
+  .stock {
+    padding-top: 64px;
+  }
+
+  .stock__title {
+    margin-bottom: 39px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .stock__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .stock__left-block {
+    margin: 0 auto;
+    max-width: 680px;
+    max-height: 462px;
+  }
+
+  .stock__image img {
+    min-width: 399px;
+    height: 462px;
+  }
+
+  .stock__right-block {
+    max-width: 678px;
+    margin: 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .stock-card {
+    margin-top: 30px;
+    max-width: 324px;
+  }
+
+  .comment {
+    padding-top: 7px;
+  }
+
+  .comment__title {
+    margin-bottom: 40px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .comment__block {
+    padding: 40px 65px;
+    max-width: 566px;
   }
 }
 
@@ -3393,6 +3464,112 @@ button,
 
   .advantages-card--four {
     margin: 0;
+  }
+
+  .stock {
+    padding-top: 101px;
+  }
+
+  .stock__title {
+    margin-bottom: 42px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .stock__left-block {
+    max-width: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .stock__promo {
+    text-align: center;
+    min-width: 240px;
+    max-width: 290px;
+  }
+
+  .stock__promo p {
+    margin: 19px 0 0;
+  }
+
+  .stock__promo a {
+    margin: 0 auto;
+    margin-top: 32px;
+    text-align: start;
+  }
+
+  .stock__image img {
+    min-width: 240px;
+    max-width: 290px;
+    height: 299px;
+  }
+
+  .stock__right-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .stock-card {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 290px;
+  }
+
+  .stock-card h3 {
+    margin-top: 10px;
+  }
+
+  .stock-card a {
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  .comment__title {
+    margin-top: 7px;
+    margin-bottom: 42px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .comment__block {
+    position: relative;
+    padding: 25px;
+    max-width: 226px;
+    min-height: 335px;
+  }
+
+  .comment__image img {
+    margin-right: 0;
+  }
+
+  .comment__image {
+    position: absolute;
+    margin-top: 0;
+    top: 40px;
+    left: 41px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .comment__text {
+    margin-left: 0;
+  }
+
+  .comment__text h4 {
+    margin: 23px 15px 23px auto;
+    line-height: 130%;
+    max-width: 62px;
+  }
+
+  .comment__text p {
+    margin-bottom: 0;
+    text-align: center;
   }
 }
 
