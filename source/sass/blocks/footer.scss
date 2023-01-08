@@ -1,6 +1,6 @@
 .footer {
   padding: 0 var(--side-offset, 20px);
-  background: #030A1A;
+  background: #030a1a;
   padding-top: 27px;
   padding-bottom: 28px;
 
@@ -8,10 +8,14 @@
     padding-top: 30px;
     padding-bottom: 32px;
   }
+
+  @media (max-width: 767px) {
+    padding-bottom: 55px;
+  }
 }
 
 .footer a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__row {
@@ -28,14 +32,14 @@
 
 .footer__logo {
   margin-top: 12px;
-  font-family: 'Alumni Sans';
+  font-family: $ff-accent;
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
   line-height: 31px;
   align-items: center;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (max-width: 1199px) {
     margin-top: 0;
@@ -44,14 +48,18 @@
 
   @media (max-width: 767px) {
     position: absolute;
+    top: 16px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
 .footer__nav {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
 
   @media (max-width: 1199px) {
-    width: 434px;
+    max-width: 434px;
   }
 }
 
@@ -59,16 +67,17 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
 
   @media (max-width: 767px) {
     margin: 0;
     flex-direction: column;
-    max-height: 200px;
+    max-height: 150px;
   }
 }
 
 .footer__list a {
-  font-family: 'Roboto Condensed';
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -76,7 +85,12 @@
   display: flex;
   align-items: center;
 
-  color: #FFFFFF;
+  color: #ffffff;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .footer__list li {
@@ -88,18 +102,23 @@
 
   @media (max-width: 767px) {
     margin-left: 0;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-right: 75px;
   }
 }
 
 .footer__list li:first-child {
   @media (max-width: 767px) {
-    margin-top: 80px;
+    margin-top: 59px;
   }
 }
 
 .footer__socials {
   display: flex;
+
+  @media (max-width: 767px) {
+    margin-top: 35px;
+  }
 }
 
 .footer__socials a {

@@ -1,6 +1,7 @@
 :root {
   // --side-offset: calc(50vw - 588.5px);
   --side-offset: calc(50vw - 580px);
+
   // - var(--scrollbarWidth, 0px) / 2
   @media (max-width: (1160px + 50px*2)) {
     --side-offset: 45px;
@@ -10,9 +11,9 @@
     --side-offset: 15px;
   }
 }
+
 .wrapper {
   position: relative;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;

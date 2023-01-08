@@ -14,7 +14,7 @@
 .stock__title {
   margin-top: 30px;
   margin-bottom: 33px;
-  font-family: 'Alumni Sans';
+  font-family: $ff-accent;
   font-style: normal;
   font-weight: 600;
   font-size: 54px;
@@ -37,7 +37,6 @@
   }
 }
 
-
 .stock__row {
   display: flex;
   justify-content: space-between;
@@ -45,8 +44,6 @@
   @media (max-width: 1199px) {
     flex-direction: column;
   }
-
-  @media (max-width: 767px) {}
 }
 
 .stock__left-block {
@@ -71,7 +68,7 @@
   padding: 34px 45px 45px;
   display: flex;
   flex-direction: column;
-  background: #ED0233;
+  background: #ed0233;
   max-width: 280px;
 
   @media (max-width: 767px) {
@@ -83,38 +80,37 @@
 
 .stock__promo h4 {
   margin: 0;
-  font-family: 'Roboto Condensed';
+
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 156%;
   align-items: center;
-  color: #FFFFFF;
-
+  color: #ffffff;
 }
 
 .stock__promo h3 {
   margin: 0;
-  font-family: 'Roboto Condensed';
+
   font-style: normal;
   font-weight: 700;
   font-size: 70px;
   line-height: 60px;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .stock__promo p {
   margin: 0;
   margin-top: 23px;
-  font-family: 'Roboto Condensed';
+
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (max-width: 767px) {
     margin: 19px 0 0;
@@ -124,14 +120,14 @@
 .stock__promo a {
   display: inline-block;
   margin-top: auto;
-  font-family: 'Roboto Condensed';
+
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 11px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (max-width: 767px) {
     margin: 0 auto;
@@ -145,7 +141,7 @@
   padding-top: 3px;
   display: block;
   width: 79px;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
 }
 
 .stock__image img {
@@ -181,79 +177,4 @@
   @media (max-width: 767px) {
     flex-direction: column;
   }
-}
-
-.stock-card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 211px;
-  padding: 27px;
-  border: 7px solid transparent;
-  border-image: linear-gradient(top left, rgba(209, 10, 66, 1), rgba(0, 53, 159, 1));
-  border-image-slice: 1;
-
-  @media (max-width: 1199px) {
-    margin-top: 30px;
-    max-width: 324px;
-  }
-
-  @media (max-width: 767px) {
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 30px;
-    max-width: 290px;
-  }
-}
-
-.stock-card h3 {
-  margin: 0;
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  align-items: center;
-  color: #1C3374;
-
-  @media (max-width: 767px) {
-    margin-top: 10px;
-  }
-}
-
-.stock-card p {
-  margin: 0;
-  margin-top: 8px;
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  color: #1C3374;
-}
-
-.stock-card a {
-  margin-top: auto;
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  align-items: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #1C3374;
-
-  @media (max-width: 767px) {
-    margin: 0 auto;
-    margin-top: 25px;
-  }
-}
-
-.stock-card a::after {
-  content: "";
-  padding-top: 3px;
-  display: block;
-  width: 68px;
-  border-bottom: 1px solid #1C3374;
 }

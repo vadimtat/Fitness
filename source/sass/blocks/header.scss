@@ -13,20 +13,20 @@
   }
 }
 
-.header_row {
+.header__row {
   display: flex;
   justify-content: space-between;
 }
 
 .header__logo {
-  font-family: 'Alumni Sans';
+  font-family: $ff-accent;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 43px;
   align-items: center;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (max-width: 1199px) {
     font-weight: 700;
@@ -42,13 +42,13 @@
 
 .header__phone {
   display: flex;
-  font-family: 'Alumni Sans';
+  font-family: $ff-accent;
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (max-width: 1199px) {
     font-weight: 700;

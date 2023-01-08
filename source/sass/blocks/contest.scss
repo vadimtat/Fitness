@@ -15,10 +15,6 @@
 }
 
 .contest__row {
-  // position: relative;
-  // width: 100%;
-  // display: flex;
-  // justify-content: space-between;
   display: flex;
 
   @media (max-width: 1199px) {
@@ -32,7 +28,7 @@
 
 .contest__info {
   padding: 50px 79px;
-  background: #ED0233;
+  background: #ed0233;
   width: 100%;
   max-width: 500px;
 
@@ -56,7 +52,7 @@
   margin: 0;
   margin-top: 15px;
   max-width: 201px;
-  font-family: 'Alumni Sans';
+  font-family: $ff-accent;
   font-style: normal;
   font-weight: 600;
   font-size: 82px;
@@ -65,8 +61,7 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
-
+  color: #ffffff;
 
   @media (max-width: 1199px) {
     margin: 32px 0 0;
@@ -86,14 +81,14 @@
 
 .contest__date-title {
   margin: 0;
-  font-family: 'Roboto Condensed';
+
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (max-width: 1199px) {
     font-size: 12px;
@@ -111,7 +106,7 @@
   content: "";
   width: 64px;
   height: 1px;
-  background: #FFFFFF;
+  background: #ffffff;
 
   @media (max-width: 1199px) {
     top: 1px;
@@ -121,15 +116,14 @@
 
 .contest__date-number {
   margin: 0;
-  font-family: 'Roboto Condensed';
+
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
-
+  color: #ffffff;
 
   @media (max-width: 1199px) {
     font-size: 24px;
@@ -139,16 +133,14 @@
 .contest__date-month {
   margin: 0;
   margin-left: 7px;
-  font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 40px;
-
 
   @media (max-width: 1199px) {
     margin-left: 5px;
@@ -161,14 +153,13 @@
 .contest__text {
   margin-top: 9px;
   margin-bottom: 46px;
-  font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (max-width: 1199px) {
     margin-bottom: 30px;
@@ -183,22 +174,21 @@
   margin-top: 25px;
   align-items: center;
   text-align: center;
-  font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
-  border: 4px solid #FFFFFF;
+  color: #ffffff;
+  border: 4px solid #ffffff;
 
   @media (max-width: 1199px) {
     font-size: 10px;
     line-height: 12px;
     padding: 12px 12px;
     max-width: 202px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #ffffff;
   }
 
   @media (max-width: 767px) {
@@ -228,19 +218,16 @@
   }
 }
 
-.contest__time {}
-
 .contest__time-title {
   margin: 0;
   margin-top: 9px;
-  font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (max-width: 1199px) {
     margin: -2px 0 0;
@@ -251,14 +238,14 @@
 .contest__time-numer {
   position: relative;
   margin: 0;
-  font-family: 'Roboto Condensed';
+
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (max-width: 1199px) {
     font-size: 24px;
@@ -271,7 +258,7 @@
   top: 5px;
   width: 88px;
   height: 1px;
-  background: #FFFFFF;
+  background: #ffffff;
 
   @media (max-width: 1199px) {
     width: 56px;

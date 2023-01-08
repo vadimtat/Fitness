@@ -1,7 +1,7 @@
 .subscription {
   padding: 0 var(--side-offset, 20px);
   padding-top: 120px;
-  background: #F8F9FC;
+  background: #f8f9fc;
   padding-bottom: 120px;
 
   @media (max-width: 1199px) {
@@ -23,7 +23,7 @@
   margin: 0;
   display: block;
   text-align: center;
-  font-family: 'Alumni Sans';
+  font-family: $ff-accent;
   font-style: normal;
   font-weight: 600;
   font-size: 54px;

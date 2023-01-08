@@ -57,7 +57,7 @@
 
 .trainer-card__title {
   margin: 0;
-  font-family: 'Roboto Condensed';
+
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -75,14 +75,14 @@
 
 .trainer-card__subtitle {
   margin: 0;
-  font-family: 'Roboto Condensed';
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   display: block;
   align-items: center;
-  color: #B6BDCC;
+  color: #b6bdcc;
   text-align: center;
   transform: translateY(294px - 50px);
 
@@ -103,7 +103,6 @@
   line-height: 1.4;
   opacity: 0;
   transform: translateY(294px);
-  opacity: 0;
 
   transition: {
     property: transform, opacity;
@@ -118,11 +117,11 @@
 
 .trainer-card__value {
   margin-top: 13px;
-  font-family: 'Roboto Condensed';
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }

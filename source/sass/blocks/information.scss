@@ -37,7 +37,7 @@
 
 .information h2 {
   margin-bottom: 0;
-  font-family: 'Alumni Sans';
+  font-family: $ff-accent;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -61,7 +61,6 @@
     align-items: center;
     justify-content: flex-start;
     letter-spacing: 0.03em;
-
     color: #102654;
   }
 }
@@ -70,7 +69,6 @@
   margin: 0;
   margin-top: 6px;
   margin-bottom: 39px;
-  font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -96,7 +94,7 @@
 .information p {
   margin-bottom: 8px;
   margin-top: 0;
-  font-family: 'Roboto Condensed';
+
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -131,8 +129,6 @@
   max-width: 660px;
   height: 401px;
   display: block;
-  // background-image: url("../img/information/informationphoto.png");
-
 
   @media (max-width: 1199px) {
     margin: 0 auto;

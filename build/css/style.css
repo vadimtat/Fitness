@@ -453,7 +453,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -807,7 +807,7 @@ button,
   position: absolute;
 }
 
-.header_row {
+.header__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -817,7 +817,7 @@ button,
 }
 
 .header__logo {
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -826,25 +826,25 @@ button,
   -ms-flex-align: center;
   align-items: center;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .header__phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .main-block {
   padding: 0 var(--side-offset, 20px);
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   padding-top: 51px;
   padding-bottom: 51px;
 }
@@ -886,7 +886,6 @@ button,
 
 .left-side__item {
   display: block;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -894,12 +893,11 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  text-align: right;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: end;
 }
 
-.left-side__block {
+.left-side {
   position: relative;
   width: 100%;
   display: -webkit-box;
@@ -917,7 +915,7 @@ button,
   margin-left: auto;
   margin-top: 111px;
   width: 133px;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -926,22 +924,22 @@ button,
   -ms-flex-align: center;
   align-items: center;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .left-side__title {
   display: block;
   max-width: 298px;
   margin: 15px 0 0 auto;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 92px;
   line-height: 110px;
   text-align: right;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
-  text-shadow: #FFFFFF 2px 0px, #FFFFFF 2px 2px, #FFFFFF 0px 2px, #FFFFFF -2px 2px, #FFFFFF -2px 0px, #FFFFFF -2px -2px, #FFFFFF 0px -2px, #FFFFFF 2px -2px;
+  color: #ffffff;
+  text-shadow: #ffffff 2px 0, #ffffff 2px 2px, #ffffff 0 2px, #ffffff -2px 2px, #ffffff -2px 0, #ffffff -2px -2px, #ffffff 0 -2px, #ffffff 2px -2px;
   text-transform: uppercase;
 }
 
@@ -951,14 +949,13 @@ button,
   margin-top: 48px;
   margin-left: auto;
   padding: 19px 11px;
-  font-family: "Roboto Condensed";
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #fff;
-  border: 4px solid #fff;
+  color: #ffffff;
+  border: 4px solid #ffffff;
   text-align: center;
   max-width: 230px;
 }
@@ -986,7 +983,7 @@ button,
 
 .information h2 {
   margin-bottom: 0;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -1005,7 +1002,6 @@ button,
   margin: 0;
   margin-top: 6px;
   margin-bottom: 39px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1022,7 +1018,6 @@ button,
 .information p {
   margin-bottom: 8px;
   margin-top: 0;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1127,7 +1122,7 @@ button,
 .subscription {
   padding: 0 var(--side-offset, 20px);
   padding-top: 120px;
-  background: #F8F9FC;
+  background: #f8f9fc;
   padding-bottom: 120px;
 }
 
@@ -1139,7 +1134,7 @@ button,
   margin: 0;
   display: block;
   text-align: center;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 54px;
@@ -1155,6 +1150,7 @@ button,
 }
 
 .tabs__list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1162,16 +1158,26 @@ button,
   margin-bottom: 10px;
   max-width: 341px;
   margin-top: 5px;
-  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
-.tabs__list a {
-  font-family: "Roboto Condensed";
+.tabs__list::before {
+  content: "";
+  bottom: 0;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: rgba(120, 120, 120, 0.2);
+}
+
+.tabs__item {
+  border: none;
+  padding: 11px 0;
+  background: none;
+  margin-right: 46px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
-  /* or 30px */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1181,21 +1187,8 @@ button,
   color: rgba(16, 38, 84, 0.5);
 }
 
-.tabs__item {
-  position: relative;
-  padding: 11px 0;
-}
-
 .tabs__item--active {
-  width: 100%;
-  left: 0;
-  bottom: -2px;
-  border: 1px solid #D10A42;
-  position: absolute;
-}
-
-.tabs__item {
-  margin-right: 46px;
+  border-bottom: 2px solid #d10a42;
 }
 
 .tabs__item:last-child {
@@ -1231,15 +1224,14 @@ button,
   padding: 40px;
   width: 100%;
   max-width: 360px;
-  background: #FFFFFF;
-  border: 7px solid #FFFFFF;
+  background: #ffffff;
+  border: 7px solid #ffffff;
   z-index: 2;
 }
 
 .tabs__card h3 {
   margin-top: 15px;
   margin-bottom: 0;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -1256,7 +1248,6 @@ button,
   position: relative;
   display: block;
   margin-top: 47px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -1264,7 +1255,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #103AAE;
+  color: #103aae;
   z-index: 2;
 }
 
@@ -1274,7 +1265,6 @@ button,
 
 .tabs__card p {
   margin-top: 11px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1282,29 +1272,28 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #495A7D;
+  color: #495a7d;
 }
 
 .tabs__card:hover {
   border: 7px solid transparent;
-  -o-border-image: -o-linear-gradient(top left, rgb(209, 10, 66), rgb(0, 53, 159));
-  border-image: -webkit-gradient(linear, left top, right bottom, from(rgb(209, 10, 66)), to(rgb(0, 53, 159)));
-  border-image: linear-gradient(top left, rgb(209, 10, 66), rgb(0, 53, 159));
+  -o-border-image: -o-linear-gradient(bottom right, rgb(209, 10, 66), rgb(0, 53, 159));
+  border-image: -webkit-gradient(linear, right bottom, left top, from(rgb(209, 10, 66)), to(rgb(0, 53, 159)));
+  border-image: linear-gradient(to top left, rgb(209, 10, 66), rgb(0, 53, 159));
   border-image-slice: 1;
 }
 
 .tabs__card:hover .tabs__button {
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
-  background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 }
 
 .tabs__price-shadow {
   bottom: -7px;
   left: -19px;
   position: absolute;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 100px;
@@ -1315,7 +1304,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #E8E8E8;
+  color: #e8e8e8;
   opacity: 0.48;
   z-index: -2;
 }
@@ -1327,7 +1316,6 @@ button,
   margin-top: 33px;
   margin-bottom: 20px;
   padding: 25px 42px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -1355,7 +1343,7 @@ button,
 
 .contest__info {
   padding: 50px 79px;
-  background: #ED0233;
+  background: #ed0233;
   width: 100%;
   max-width: 500px;
 }
@@ -1373,7 +1361,7 @@ button,
   margin: 0;
   margin-top: 15px;
   max-width: 201px;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 82px;
@@ -1386,7 +1374,7 @@ button,
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contest__date {
@@ -1395,7 +1383,6 @@ button,
 
 .contest__date-title {
   margin: 0;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1406,7 +1393,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contest__date-container {
@@ -1422,12 +1409,11 @@ button,
   content: "";
   width: 64px;
   height: 1px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .contest__date-number {
   margin: 0;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -1438,13 +1424,12 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contest__date-month {
   margin: 0;
   margin-left: 7px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1455,14 +1440,13 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 40px;
 }
 
 .contest__text {
   margin-top: 9px;
   margin-bottom: 46px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1473,7 +1457,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contest__button {
@@ -1484,15 +1468,14 @@ button,
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
-  border: 4px solid #FFFFFF;
+  color: #ffffff;
+  border: 4px solid #ffffff;
 }
 
 .contest__image img {
@@ -1510,7 +1493,6 @@ button,
 .contest__time-title {
   margin: 0;
   margin-top: 9px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1521,13 +1503,12 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contest__time-numer {
   position: relative;
   margin: 0;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -1538,7 +1519,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contest__time-numer::before {
@@ -1547,7 +1528,7 @@ button,
   top: 5px;
   width: 88px;
   height: 1px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .trainer {
@@ -1558,7 +1539,7 @@ button,
 .trainer h2 {
   margin: 0;
   margin-bottom: 50px;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 54px;
@@ -1630,7 +1611,6 @@ button,
 
 .trainer-card__title {
   margin: 0;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1655,7 +1635,6 @@ button,
 
 .trainer-card__subtitle {
   margin: 0;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1664,7 +1643,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #B6BDCC;
+  color: #b6bdcc;
   text-align: center;
   -webkit-transform: translateY(244px);
   -ms-transform: translateY(244px);
@@ -1694,7 +1673,6 @@ button,
   -webkit-transform: translateY(294px);
   -ms-transform: translateY(294px);
   transform: translateY(294px);
-  opacity: 0;
   -webkit-transition-property: opacity, -webkit-transform;
   transition-property: opacity, -webkit-transform;
   -o-transition-property: transform, opacity;
@@ -1710,7 +1688,6 @@ button,
 
 .trainer-card__value {
   margin-top: 13px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1718,24 +1695,17 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .swiper {
   width: 100%;
 }
 
-.swiper-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .advantages {
   padding: 0 var(--side-offset, 20px);
-  padding-bottom: 91px;
-  padding-top: 135px;
   padding-bottom: 200px;
+  padding-top: 135px;
 }
 
 .advantages__title {
@@ -1743,7 +1713,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 54px;
@@ -1756,6 +1726,105 @@ button,
   align-items: center;
   letter-spacing: 0.03em;
   color: #102654;
+}
+
+.advantages__center-block {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  width: 100%;
+  max-width: 240px;
+  height: 307px;
+  margin: auto auto;
+  padding: 0 34px;
+  background: #1c3374;
+  grid-area: centralblock;
+}
+
+.advantages__center-block h2 {
+  margin: 0;
+  margin-top: 60px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.advantages__center-block h3 {
+  margin: 0;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.advantages__center-block p {
+  margin: 0;
+  margin-top: 33px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.advantages__row {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 45px;
+  max-width: 1040px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: (164px)[2];
+  grid-template-rows: repeat(2, 164px);
+  grid-template-areas: "card1 centralblock card3" "card2 centralblock card4";
+}
+
+.advantages__row::before {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 340px;
+  height: 2px;
+  background: rgba(209, 10, 66, 0.2);
+}
+
+.advantages__row::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: "";
+  width: 340px;
+  height: 2px;
+  background: rgba(209, 10, 66, 0.2);
 }
 
 .advantages-card {
@@ -1772,7 +1841,6 @@ button,
 
 .advantages-card__number h3 {
   margin: 0;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 71px;
@@ -1780,21 +1848,20 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: -o-linear-gradient(322.39deg, #D10A42 0%, #0041CA 45.58%);
-  background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
+  background: -o-linear-gradient(322.39deg, #d10a42 0%, #0041ca 45.58%);
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .advantages-card__number span {
   margin: 0;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
-  color: #2E35AC;
+  color: #2e35ac;
 }
 
 .advantages-card__description {
@@ -1804,7 +1871,6 @@ button,
 .advantages-card__title {
   margin: 0;
   margin-top: 5px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -1818,7 +1884,6 @@ button,
 .advantages-card__text {
   margin: 0;
   margin-top: 3px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1827,114 +1892,6 @@ button,
   -ms-flex-align: center;
   align-items: center;
   color: #102654;
-}
-
-.advantages__center-block {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  width: 100%;
-  max-width: 240px;
-  height: 307px;
-  margin: auto auto;
-  padding: 0 34px;
-  background: #1C3374;
-  grid-area: centralblock;
-}
-
-.advantages__center-block h2 {
-  margin: 0;
-  margin-top: 60px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 74px;
-  line-height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.advantages__center-block h3 {
-  margin: 0;
-  margin-top: 10px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 150%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #FFFFFF;
-}
-
-.advantages__center-block p {
-  margin: 0;
-  margin-top: 33px;
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.advantages__right-block {
-  position: relative;
-  min-height: 307px;
-  max-width: 340px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.advantages__right-block::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  height: 2px;
-  background: rgba(209, 10, 66, 0.2);
-}
-
-.advantages__row {
-  position: relative;
-  margin: 0 auto;
-  margin-top: 45px;
-  max-width: 1040px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: (164px)[2];
-  grid-template-rows: repeat(2, 164px);
-  grid-template-areas: "card1 centralblock card3" "card2 centralblock card4";
 }
 
 .advantages-card--one {
@@ -1967,25 +1924,6 @@ button,
   grid-area: card4;
 }
 
-.advantages__row::before {
-  position: absolute;
-  top: 50%;
-  content: "";
-  width: 340px;
-  height: 2px;
-  background: rgba(209, 10, 66, 0.2);
-}
-
-.advantages__row::after {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  content: "";
-  width: 340px;
-  height: 2px;
-  background: rgba(209, 10, 66, 0.2);
-}
-
 .stock {
   padding: 0 var(--side-offset, 20px);
   padding-bottom: 50px;
@@ -1994,7 +1932,7 @@ button,
 .stock__title {
   margin-top: 30px;
   margin-bottom: 33px;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 54px;
@@ -2033,13 +1971,12 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: #ED0233;
+  background: #ed0233;
   max-width: 280px;
 }
 
 .stock__promo h4 {
   margin: 0;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -2047,12 +1984,11 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .stock__promo h3 {
   margin: 0;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 70px;
@@ -2060,13 +1996,12 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .stock__promo p {
   margin: 0;
   margin-top: 23px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -2077,20 +2012,19 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .stock__promo a {
   display: inline-block;
   margin-top: auto;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 11px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .stock__promo a::after {
@@ -2098,7 +2032,7 @@ button,
   padding-top: 3px;
   display: block;
   width: 79px;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
 }
 
 .stock__image img {
@@ -2135,28 +2069,26 @@ button,
   min-height: 211px;
   padding: 27px;
   border: 7px solid transparent;
-  -o-border-image: -o-linear-gradient(top left, rgb(209, 10, 66), rgb(0, 53, 159));
-  border-image: -webkit-gradient(linear, left top, right bottom, from(rgb(209, 10, 66)), to(rgb(0, 53, 159)));
-  border-image: linear-gradient(top left, rgb(209, 10, 66), rgb(0, 53, 159));
+  -o-border-image: -o-linear-gradient(bottom right, rgb(209, 10, 66), rgb(0, 53, 159));
+  border-image: -webkit-gradient(linear, right bottom, left top, from(rgb(209, 10, 66)), to(rgb(0, 53, 159)));
+  border-image: linear-gradient(to top left, rgb(209, 10, 66), rgb(0, 53, 159));
   border-image-slice: 1;
 }
 
 .stock-card h3 {
   margin: 0;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #1C3374;
+  color: #1c3374;
 }
 
 .stock-card p {
   margin: 0;
   margin-top: 8px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2166,12 +2098,11 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #1C3374;
+  color: #1c3374;
 }
 
 .stock-card a {
   margin-top: auto;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -2181,7 +2112,7 @@ button,
   align-items: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #1C3374;
+  color: #1c3374;
 }
 
 .stock-card a::after {
@@ -2189,7 +2120,7 @@ button,
   padding-top: 3px;
   display: block;
   width: 68px;
-  border-bottom: 1px solid #1C3374;
+  border-bottom: 1px solid #1c3374;
 }
 
 .comment {
@@ -2203,7 +2134,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 54px;
@@ -2225,9 +2156,9 @@ button,
   display: -ms-flexbox;
   display: flex;
   max-width: 560px;
-  background: #1C3374;
-  -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
-  box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  background: #1c3374;
+  -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
 }
 
 .comment__image img {
@@ -2250,7 +2181,6 @@ button,
 .comment__text h4 {
   margin: 0;
   margin-top: 14px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -2261,14 +2191,13 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .comment__text p {
   margin: 0;
   margin-top: 13px;
   margin-bottom: 16px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2279,7 +2208,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contacts {
@@ -2300,7 +2229,7 @@ button,
   left: 50%;
   top: 0;
   height: 1px;
-  background: #74819C;
+  background: #74819c;
 }
 
 .contacts__row {
@@ -2319,7 +2248,7 @@ button,
 .form h2 {
   margin-top: 55px;
   margin-bottom: 16px;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 54px;
@@ -2331,7 +2260,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .form__form {
@@ -2347,12 +2276,11 @@ button,
   background: none;
   max-width: 190px;
   border: none;
-  border-bottom: 1px solid #74819C;
-  color: #FFFFFF;
+  border-bottom: 1px solid #74819c;
+  color: #ffffff;
 }
 
 .form__form input::-webkit-input-placeholder {
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2361,22 +2289,20 @@ button,
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .form__form input::-moz-placeholder {
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .form__form input:-ms-input-placeholder {
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2385,11 +2311,10 @@ button,
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .form__form input::-ms-input-placeholder {
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2398,11 +2323,10 @@ button,
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .form__form input::placeholder {
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2413,7 +2337,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .form__button {
@@ -2422,7 +2346,6 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -2435,8 +2358,8 @@ button,
   align-items: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
-  border: 3px solid #FFFFFF;
+  color: #ffffff;
+  border: 3px solid #ffffff;
   background-color: inherit;
   -ms-grid-column: 1;
   grid-column-start: 1;
@@ -2453,7 +2376,7 @@ button,
 .address h2 {
   margin-top: 57px;
   margin-bottom: 37px;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 54px;
@@ -2485,7 +2408,7 @@ button,
   bottom: 6%;
   width: 2px;
   height: 102px;
-  background: #74819C;
+  background: #74819c;
 }
 
 .address__left-block {
@@ -2512,7 +2435,6 @@ button,
 
 .address__card h4 {
   margin: 0;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -2529,7 +2451,6 @@ button,
 .address__card p {
   margin: 0;
   margin-top: 3px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2546,7 +2467,6 @@ button,
 .address__card a {
   margin: 0;
   margin-top: 3px;
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2560,7 +2480,7 @@ button,
   color: #102654;
 }
 
-.adress__right__block {
+.address__right-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2575,13 +2495,13 @@ button,
 
 .footer {
   padding: 0 var(--side-offset, 20px);
-  background: #030A1A;
+  background: #030a1a;
   padding-top: 27px;
   padding-bottom: 28px;
 }
 
 .footer a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__row {
@@ -2598,7 +2518,7 @@ button,
 
 .footer__logo {
   margin-top: 12px;
-  font-family: "Alumni Sans";
+  font-family: "Alumni Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
@@ -2607,11 +2527,12 @@ button,
   -ms-flex-align: center;
   align-items: center;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__nav {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .footer__list {
@@ -2621,10 +2542,10 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .footer__list a {
-  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2635,7 +2556,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__list li {
@@ -2851,10 +2772,9 @@ button,
   .tabs__list {
     max-width: 333px;
     margin: 8px auto 10px;
-    border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   }
 
-  .tabs__list a {
+  .tabs__item {
     font-size: 18px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -2952,7 +2872,7 @@ button,
     line-height: 12px;
     padding: 12px 12px;
     max-width: 202px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #ffffff;
   }
 
   .contest__image {
@@ -3002,16 +2922,6 @@ button,
     align-items: center;
   }
 
-  .advantages-card__number h3 {
-    font-size: 58px;
-    line-height: 0.9;
-  }
-
-  .advantages-card__title {
-    margin: 0;
-    font-size: 20px;
-  }
-
   .advantages__center-block {
     max-width: 442px;
     height: 239px;
@@ -3031,21 +2941,6 @@ button,
     max-width: 180px;
   }
 
-  .advantages__right-block {
-    min-height: none;
-    max-width: none;
-    min-height: 70px;
-    width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .advantages__right-block::before {
-    display: none;
-  }
-
   .advantages__row {
     margin: 42px auto 0;
     max-width: 678px;
@@ -3061,6 +2956,24 @@ button,
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
+  }
+
+  .advantages__row::before {
+    display: none;
+  }
+
+  .advantages__row::after {
+    display: none;
+  }
+
+  .advantages-card__number h3 {
+    font-size: 58px;
+    line-height: 0.9;
+  }
+
+  .advantages-card__title {
+    margin: 0;
+    font-size: 20px;
   }
 
   .advantages-card--one {
@@ -3102,14 +3015,6 @@ button,
     margin: 0;
     margin-top: 12px;
     margin-left: 15px;
-  }
-
-  .advantages__row::before {
-    display: none;
-  }
-
-  .advantages__row::after {
-    display: none;
   }
 
   .stock {
@@ -3257,7 +3162,7 @@ button,
   }
 
   .footer__nav {
-    width: 434px;
+    max-width: 434px;
   }
 
   .footer__list li {
@@ -3416,7 +3321,7 @@ button,
     margin: 11px auto 10px;
   }
 
-  .tabs__list a {
+  .tabs__item {
     font-size: 16px;
   }
 
@@ -3444,11 +3349,6 @@ button,
     margin: 36px auto 0;
     font-size: 48px;
     line-height: 150%;
-  }
-
-  .tabs__icon {
-    width: 24px;
-    height: 33px;
   }
 
   .tabs__icon {
@@ -3527,6 +3427,38 @@ button,
     line-height: 38px;
   }
 
+  .advantages__center-block {
+    margin-top: 48px;
+    margin-bottom: 45px;
+  }
+
+  .advantages__center-block h2 {
+    margin: 45px 0 0;
+  }
+
+  .advantages__center-block h3 {
+    margin-top: 0;
+  }
+
+  .advantages__center-block p {
+    margin: 11px auto 0;
+  }
+
+  .advantages__row {
+    margin: 46px auto 0;
+    max-width: 320px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
   .advantages-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3568,38 +3500,6 @@ button,
   .advantages-card__text {
     margin: 0 auto;
     max-width: 227px;
-  }
-
-  .advantages__center-block {
-    margin-top: 48px;
-    margin-bottom: 45px;
-  }
-
-  .advantages__center-block h2 {
-    margin: 45px 0 0;
-  }
-
-  .advantages__center-block h3 {
-    margin-top: 0;
-  }
-
-  .advantages__center-block p {
-    margin: 11px auto 0;
-  }
-
-  .advantages__row {
-    margin: 46px auto 0;
-    max-width: 320px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
   }
 
   .advantages-card--one {
@@ -3788,8 +3688,12 @@ button,
     margin-left: 0;
   }
 
-  .adress__right__block {
+  .address__right-block {
     margin-top: 20px;
+  }
+
+  .footer {
+    padding-bottom: 55px;
   }
 
   .footer__row {
@@ -3805,6 +3709,9 @@ button,
 
   .footer__logo {
     position: absolute;
+    top: 16px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .footer__list {
@@ -3813,16 +3720,26 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    max-height: 200px;
+    max-height: 150px;
+  }
+
+  .footer__list a {
+    font-size: 16px;
+    line-height: 19px;
   }
 
   .footer__list li {
     margin-left: 0;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-right: 75px;
   }
 
   .footer__list li:first-child {
-    margin-top: 80px;
+    margin-top: 59px;
+  }
+
+  .footer__socials {
+    margin-top: 35px;
   }
 }
 

@@ -16,7 +16,7 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="header_row">
+      <div class="header__row">
         <a href="#" class="header__logo">SUPERGYM</a>
         <a href="tel:88005555555" class="header__phone">8-800-555-55-55</a>
       </div>
@@ -25,7 +25,7 @@
       <section class="main-block">
         <div class="main-block__row">
           <div class="main-block__left-side">
-            <div class="left-side__block">
+            <div class="left-side">
               <ul class="left-side__list">
                 <li class="left-side__item">Тренажёрный зал</li>
                 <li class="left-side__item">Групповые занятия</li>
@@ -61,7 +61,7 @@
             <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
               в&nbsp;фитнес
               центре есть
-              несколько оборудованных залов для различных видов групповых занятий.</>
+              несколько оборудованных залов для различных видов групповых занятий.</p>
           </div>
           <div class="information__right-side">
             <div class="information__image"></div>
@@ -86,13 +86,13 @@
         <div class="subscription__row">
           <h2 class="subscription__title">Абонементы</h2>
           <div class="tabs">
-            <nav class="tabs__list">
-              <a href="#tab01" class="tabs__item">1 месяц <span class="tabs__item--active"></span></a>
-              <a href="#tab02" class="tabs__item">6 месяцев <span class="tabs__item--active"></span></a>
-              <a href="#tab03" class="tabs__item">12 месяцев <span class="tabs__item--active"></span></a>
-            </nav>
+            <div class="tabs__list">
+              <button type="button" class="tabs__item" data-tab="#tab01">1 месяц</button>
+              <button type="button" class="tabs__item" data-tab="#tab02">6 месяцев</button>
+              <button type="button" class="tabs__item" data-tab="#tab03">12 месяцев</button>
+            </div>
             <div class="tabs__body">
-              <div id="tab01" class="tabs__block tabs__block--active">
+              <div id="tab01" class="tabs__block">
                 <div class="tabs__card">
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
@@ -106,20 +106,20 @@
                 <div class="tabs__card">
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
-                  <b class="tabs__price">5000<svg class="tabs__icon" width="30" height="42">
+                  <b class="tabs__price">1700<svg class="tabs__icon" width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
-                    <span class="tabs__price-shadow">5000</span>
+                    <span class="tabs__price-shadow">1700</span>
                   </b>
                   <a href="#" class="tabs__button">купить абонемент</a>
                 </div>
                 <div class="tabs__card">
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
-                  <b class="tabs__price">5000<svg class="tabs__icon" width="30" height="42">
+                  <b class="tabs__price">2700<svg class="tabs__icon" width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
-                    <span class="tabs__price-shadow">5000</span>
+                    <span class="tabs__price-shadow">2700</span>
                   </b>
                   <a href="#" class="tabs__button">купить абонемент</a>
                 </div>
@@ -128,42 +128,42 @@
                 <div class="tabs__card">
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
-                  <b class="tabs__price">5000<svg class="tabs__icon" width="30" height="42">
+                  <b class="tabs__price">8000<svg class="tabs__icon" width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
-                    <span class="tabs__price-shadow">5000</span>
+                    <span class="tabs__price-shadow">3000</span>
                   </b>
                   <a href="#" class="tabs__button">купить абонемент</a>
                 </div>
                 <div class="tabs__card">
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
-                  <b class="tabs__price">5000<svg class="tabs__icon" width="30" height="42">
+                  <b class="tabs__price">4500<svg class="tabs__icon" width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
-                    <span class="tabs__price-shadow">5000</span>
+                    <span class="tabs__price-shadow">4500</span>
                   </b>
                   <a href="#" class="tabs__button">купить абонемент</a>
                 </div>
                 <div class="tabs__card">
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
-                  <b class="tabs__price">5000<svg class="tabs__icon" width="30" height="42">
+                  <b class="tabs__price">6000<svg class="tabs__icon" width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
-                    <span class="tabs__price-shadow">5000</span>
+                    <span class="tabs__price-shadow">6000</span>
                   </b>
                   <a href="#" class="tabs__button">купить абонемент</a>
                 </div>
               </div>
-              <div id="ta b03" class="tabs__block">
+              <div id="tab03" class="tabs__block">
                 <div class="tabs__card">
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
-                  <b class="tabs__price">5000<svg class="tabs__icon" width="30" height="42">
+                  <b class="tabs__price">9000<svg class="tabs__icon" width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
-                    <span class="tabs__price-shadow">5000</span>
+                    <span class="tabs__price-shadow">9000</span>
                   </b>
                   <a href="#" class="tabs__button">купить абонемент</a>
                 </div>
@@ -180,10 +180,10 @@
                 <div class="tabs__card">
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
-                  <b class="tabs__price">5000<svg class="tabs__icon" width="30" height="42">
+                  <b class="tabs__price">7500<svg class="tabs__icon" width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
-                    <span class="tabs__price-shadow">5000</span>
+                    <span class="tabs__price-shadow">7500</span>
                   </b>
                   <a href="#" class="tabs__button">купить абонемент</a>
                 </div>
@@ -216,7 +216,7 @@
           <picture class="contest__image">
             <source type="image/webp" srcset="./img/contest/contestphoto.webp 1x, ./img/contest/contestphoto2x.webp 2x">
             <source srcset="./img/contest/contestphoto.png 1x, ./img/contest/contestphoto2x.png 2x">
-            <img src="./img/contest/contestphoto.png" alt="спортсмен" width="660px" height="500px">
+            <img src="./img/contest/contestphoto.png" alt="спортсмен" width="660" height="500">
           </picture>
         </div>
       </section>
@@ -227,8 +227,9 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="trainer-card">
-                  <h1 class="trainer-card__title">Александр Пашков</h1><img class="trainer-card__image"
-                    src="../img/trainer/trainer.png" alt="Тренер" />
+                  <h3 class="trainer-card__title">Александр Пашков</h3>
+                  <img class="trainer-card__image"
+                    src="../img/trainer/trainer.png" alt="Тренер" width="260" height="294"/>
                   <p class="trainer-card__subtitle">CrossFit</p>
                   <ul class="trainer-card__info">
                     <li class="trainer-card__value">Certified Level 3 Trainer</li>
@@ -239,8 +240,8 @@
               </div>
               <div class="swiper-slide">
                 <div class="trainer-card">
-                  <h1 class="trainer-card__title">Александр Пашков</h1><img class="trainer-card__image"
-                    src="../img/trainer/trainer.png" alt="Тренер" />
+                  <h3 class="trainer-card__title">Александр Пашков</h3><img class="trainer-card__image"
+                    src="../img/trainer/trainer.png" alt="Тренер" width="260" height="294"/>
                   <p class="trainer-card__subtitle">CrossFit</p>
                   <ul class="trainer-card__info">
                     <li class="trainer-card__value">Certified Level 3 Trainer</li>
@@ -251,8 +252,8 @@
               </div>
               <div class="swiper-slide">
                 <div class="trainer-card">
-                  <h1 class="trainer-card__title">Александр Пашков</h1><img class="trainer-card__image"
-                    src="../img/trainer/trainer.png" alt="Тренер" />
+                  <h3 class="trainer-card__title">Александр Пашков</h3><img class="trainer-card__image"
+                    src="../img/trainer/trainer.png" alt="Тренер" width="260" height="294"/>
                   <p class="trainer-card__subtitle">CrossFit</p>
                   <ul class="trainer-card__info">
                     <li class="trainer-card__value">Certified Level 3 Trainer</li>
@@ -263,8 +264,8 @@
               </div>
               <div class="swiper-slide">
                 <div class="trainer-card">
-                  <h1 class="trainer-card__title">Александр Пашков</h1><img class="trainer-card__image"
-                    src="../img/trainer/trainer.png" alt="Тренер" />
+                  <h3 class="trainer-card__title">Александр Пашков</h3><img class="trainer-card__image"
+                    src="../img/trainer/trainer.png" alt="Тренер" width="260" height="294"/>
                   <p class="trainer-card__subtitle">CrossFit</p>
                   <ul class="trainer-card__info">
                     <li class="trainer-card__value">Certified Level 3 Trainer</li>
@@ -397,7 +398,7 @@
                   <p>Пн-Вс: с 8:00 до 22:00</p>
                 </div>
               </div>
-              <div class="adress__right__block">
+              <div class="address__right-block">
                 <div class="address__card">
                   <h4>Телефон:</h4>
                   <a href="tel:88005555555">8-800-555-55-55</a>
@@ -444,7 +445,7 @@
           </a>
         </div>
       </div>
-    </footer> --> -->
+    </footer>
   </div>
 
   <!-- Модалки -->
