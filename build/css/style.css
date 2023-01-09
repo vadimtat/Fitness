@@ -1555,6 +1555,31 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  position: relative;
+}
+
+.trainer__navigation {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.trainer__prev {
+  position: absolute;
+  left: -5%;
+}
+
+.trainer__next {
+  position: absolute;
+  right: -5%;
 }
 
 .trainer-card {
@@ -1698,8 +1723,26 @@ button,
   color: #ffffff;
 }
 
-.swiper {
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-navigation {
   width: 100%;
+  max-width: 1160px;
+  height: 294px;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: absolute;
 }
 
 .advantages {
@@ -2209,6 +2252,43 @@ button,
   -ms-flex-align: center;
   align-items: center;
   color: #ffffff;
+}
+
+.comment__row {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.comment__swiper {
+  max-width: 560px;
+}
+
+.comment__navigation {
+  position: absolute;
+  width: 100%;
+  max-width: 734px;
+  padding: 0 30px;
+  top: 50%;
+  margin-top: -18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.comment__prev {
+  margin: auto 0;
+}
+
+.comment__next {
+  margin: auto 0;
 }
 
 .contacts {
@@ -2901,12 +2981,25 @@ button,
     line-height: 50px;
   }
 
-  .trainer-card {
-    width: 268px;
+  .trainer__row {
+    margin: 0 auto;
+    max-width: 678px;
   }
 
-  .swiper {
-    max-width: 565px;
+  .trainer__prev {
+    left: 0;
+  }
+
+  .trainer__next {
+    right: 0;
+  }
+
+  .trainer__swiper {
+    max-width: 566px;
+  }
+
+  .trainer-card {
+    width: 268px;
   }
 
   .advantages {
@@ -3400,6 +3493,14 @@ button,
     line-height: 38px;
   }
 
+  .trainer__navigation {
+    margin-top: -11px;
+  }
+
+  .trainer__swiper {
+    max-width: 226px;
+  }
+
   .trainer-card {
     width: 226px;
     height: 274px;
@@ -3413,8 +3514,14 @@ button,
     padding: 0 0 0 30px;
   }
 
-  .swiper {
-    max-width: 226px;
+  .swiper__prev {
+    width: 11px;
+    height: 22px;
+  }
+
+  .swiper__next {
+    width: 11px;
+    height: 22px;
   }
 
   .advantages {
@@ -3626,6 +3733,14 @@ button,
   .comment__text p {
     margin-bottom: 0;
     text-align: center;
+  }
+
+  .comment__swiper {
+    max-width: 226px;
+  }
+
+  .comment__navigation {
+    margin-top: -11px;
   }
 
   .contacts {

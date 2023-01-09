@@ -1,11 +1,21 @@
-.swiper {
-  width: 100%;
-
-  @media (max-width: 1199px) {
-    max-width: 565px;
-  }
-
+.swiper__prev {
   @media (max-width: 767px) {
-    max-width: 226px;
+    width: 11px;
+    height: 22px;
   }
+}
+
+.swiper__next {
+  @media (max-width: 767px) {
+    width: 11px;
+    height: 22px;
+  }
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
 }

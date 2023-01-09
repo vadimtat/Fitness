@@ -132,3 +132,40 @@
     text-align: center;
   }
 }
+
+.comment__row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.comment__swiper {
+  max-width: 560px;
+
+  @media (max-width: 767px) {
+    max-width: 226px;
+  }
+}
+
+.comment__navigation {
+  position: absolute;
+  width: 100%;
+  max-width: 734px;
+  padding: 0 30px;
+  top: 50%;
+  margin-top: -18px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 767px) {
+    margin-top: -11px;
+  }
+}
+
+.comment__prev {
+  margin: auto 0;
+}
+
+.comment__next {
+  margin: auto 0;
+}

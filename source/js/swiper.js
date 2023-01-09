@@ -1,12 +1,12 @@
 export function initSwiper() {
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.trainer__swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.trainer__next',
+      prevEl: '.trainer__prev',
     },
 
     // And if we need scrollbar
@@ -33,5 +33,39 @@ export function initSwiper() {
         spaceBetween: 40,
       },
     },
+  });
+  const swiperPrev = document.getElementById('trainerPrev');
+  const swiperNext = document.getElementById('trainerNext');
+
+  swiperPrev.addEventListener('click', () => {
+    swiper.slidePrev();
+  });
+  swiperNext.addEventListener('click', () => {
+    swiper.slideNext();
+  });
+}
+
+export function initSwiper2() {
+  const swiperTwo = new Swiper('.comment__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    spaceBetween: 40,
+    navigation: {
+      nextEl: '.comment__next',
+      prevEl: '.comment__prev',
+    },
+  });
+  const commentPrev = document.getElementById('commentPrev');
+  const commentNext = document.getElementById('commentNext');
+
+  commentPrev.addEventListener('click', () => {
+    swiperTwo.commentPrev();
+  });
+  commentNext.addEventListener('click', () => {
+    swiperTwo.commentNext();
   });
 }

@@ -31,11 +31,58 @@
 
 .trainer__row {
   display: flex;
-  // justify-content: space-between;
+  position: relative;
+  position: relative;
+
+  @media (max-width: 1199px) {
+    margin: 0 auto;
+    max-width: 678px;
+  }
 }
 
 .swiper {
   // display: flex;
   // width: 100%;
   // justify-content: space-between;
+}
+
+.trainer__navigation {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -18px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 767px) {
+    margin-top: -11px;
+  }
+}
+
+.trainer__prev {
+  position: absolute;
+  left: -5%;
+
+  @media (max-width: 1199px) {
+    left: 0;
+  }
+}
+
+.trainer__next {
+  position: absolute;
+  right: -5%;
+
+  @media (max-width: 1199px) {
+    right: 0;
+  }
+}
+
+.trainer__swiper {
+  @media (max-width: 1199px) {
+    max-width: 566px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 226px;
+  }
 }
