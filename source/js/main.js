@@ -3,6 +3,8 @@ import {initModals} from './modules/modals/init-modals';
 import {initVideo} from './video';
 import {initSwiper, initSwiper2} from './swiper';
 import {initTabs} from './tabs';
+import { initForms } from './valid';
+import { initMaskPhone } from './mask';
 
 // ---------------------------------
 
@@ -15,6 +17,8 @@ window.addEventListener('DOMContentLoaded', () => {
   initSwiper();
   initTabs();
   initSwiper2();
+  initForms();
+  initMaskPhone();
 
   // Modules
   // ---------------------------------

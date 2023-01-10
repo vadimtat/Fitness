@@ -27,6 +27,8 @@
   align-items: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  transition: all 0.2s ease-out;
+  z-index: 10;
 
   @media (max-width: 1199px) {
     font-weight: 700;
@@ -37,6 +39,10 @@
   @media (max-width: 767px) {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  &:hover {
+    color: #1C3374;
   }
 }
 
@@ -49,6 +55,8 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #ffffff;
+  transition: all 0.2s ease-out;
+  z-index: 10;
 
   @media (max-width: 1199px) {
     font-weight: 700;
@@ -62,5 +70,9 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  &:hover {
+    color: #1C3374;
   }
 }

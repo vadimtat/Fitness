@@ -1,7 +1,14 @@
 .swiper__prev {
+  stroke: #afafaf;
+  fill: #afafaf;
+
   @media (max-width: 767px) {
     width: 11px;
     height: 22px;
+  }
+
+  &::hover {
+    stroke: #7a7a7a;
   }
 }
 

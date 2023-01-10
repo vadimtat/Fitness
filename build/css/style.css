@@ -827,6 +827,14 @@ button,
   align-items: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  z-index: 10;
+}
+
+.header__logo:hover {
+  color: #1C3374;
 }
 
 .header__phone {
@@ -840,6 +848,14 @@ button,
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #ffffff;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  z-index: 10;
+}
+
+.header__phone:hover {
+  color: #1C3374;
 }
 
 .main-block {
@@ -1187,6 +1203,11 @@ button,
   color: rgba(16, 38, 84, 0.5);
 }
 
+.tabs__item:hover {
+  color: #102654;
+  cursor: pointer;
+}
+
 .tabs__item--active {
   border-bottom: 2px solid #d10a42;
 }
@@ -1478,6 +1499,11 @@ button,
   border: 4px solid #ffffff;
 }
 
+.contest__button:hover {
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+}
+
 .contest__image img {
   display: block;
   width: 100%;
@@ -1606,6 +1632,13 @@ button,
 .trainer-card:focus-within {
   background: rgba(16, 38, 84, 0.89);
   padding: 50px 20px;
+  cursor: pointer;
+  overflow: auto;
+}
+
+.trainer-card:hover::-webkit-scrollbar,
+.trainer-card:focus-within::-webkit-scrollbar {
+  display: none;
 }
 
 .trainer-card:hover .trainer-card__title,
@@ -1721,6 +1754,15 @@ button,
   -ms-flex-align: center;
   align-items: center;
   color: #ffffff;
+}
+
+.swiper__prev {
+  stroke: #afafaf;
+  fill: #afafaf;
+}
+
+.swiper__prev::hover {
+  stroke: #7a7a7a;
 }
 
 .swiper-button-next::after {
@@ -2447,6 +2489,11 @@ button,
   grid-column-end: 3;
 }
 
+.form__error {
+  -webkit-box-shadow: 0 0 2px 2px #ff0000;
+  box-shadow: 0 0 2px 2px #ff0000;
+}
+
 .address {
   width: 100%;
   max-width: 404px;
@@ -2852,13 +2899,6 @@ button,
   .tabs__list {
     max-width: 333px;
     margin: 8px auto 10px;
-  }
-
-  .tabs__item {
-    font-size: 18px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
   }
 
   .tabs__item {
@@ -3415,10 +3455,6 @@ button,
   }
 
   .tabs__item {
-    font-size: 16px;
-  }
-
-  .tabs__item {
     margin-right: 45px;
   }
 
@@ -3855,6 +3891,13 @@ button,
 
   .footer__socials {
     margin-top: 35px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html,
+  body {
+    scroll-behavior: smooth;
   }
 }
 

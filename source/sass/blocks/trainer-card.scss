@@ -18,6 +18,12 @@
   &:focus-within {
     background: rgba(16, 38, 84, 0.89);
     padding: 50px 20px;
+    cursor: pointer;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &:hover .trainer-card__title,
