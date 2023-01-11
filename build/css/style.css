@@ -2816,6 +2816,7 @@ button,
   max-width: 110px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  color: #ffffff;
 }
 
 .footer__socials a {
