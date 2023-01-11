@@ -1,5 +1,6 @@
 .form {
   max-width: 410px;
+  width: 100%;
 
   @media (max-width: 1199px) {
     max-width: 474px;
@@ -104,10 +105,17 @@
   background-color: inherit;
   grid-column-start: 1;
   grid-column-end: 3;
+  user-select: none;
 
   @media (max-width: 767px) {
     margin-top: 8px;
     grid-column-end: 2;
+  }
+
+  &:hover,
+  &:focus {
+    color: #868686;
+    border: 3px solid #868686;
   }
 }
 

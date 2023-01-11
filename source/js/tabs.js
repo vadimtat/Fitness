@@ -8,11 +8,11 @@ export function initTabs() {
       let tabId = currentBtn.getAttribute('data-tab');
       let currentTab = document.querySelector(tabId);
       if (!currentBtn.classList.contains('tabs__item--active')) {
-        tabsBtn.forEach((e) => {
-          e.classList.remove('tabs__item--active');
+        tabsBtn.forEach((item) => {
+          item.classList.remove('tabs__item--active');
         });
-        tabsItems.forEach((e) => {
-          e.classList.remove('tabs__block--active');
+        tabsItems.forEach((item) => {
+          item.classList.remove('tabs__block--active');
         });
         currentBtn.classList.add('tabs__item--active');
         currentTab.classList.add('tabs__block--active');

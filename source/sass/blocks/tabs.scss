@@ -39,25 +39,20 @@
   display: flex;
   align-items: center;
   color: rgba(16, 38, 84, 0.5);
-
-  // @media (max-width: 1199px) {
-  //   font-size: 18px;
-  //   align-items: center;
-  // }
-
-  // @media (max-width: 767px) {
-  //   font-size: 16px;
-  // }
+  user-select: none;
 
   @media (max-width: 1199px) {
+    font-size: 18px;
     margin-right: 55px;
   }
 
   @media (max-width: 767px) {
+    font-size: 16px;
     margin-right: 45px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #102654;
     cursor: pointer;
   }
@@ -188,7 +183,8 @@
   color: #495a7d;
 }
 
-.tabs__card:hover {
+.tabs__card:hover,
+.tabs__card:focus {
   border: 7px solid transparent;
   border-image: linear-gradient(to top left, rgba(209, 10, 66, 1), rgba(0, 53, 159, 1));
   border-image-slice: 1;
@@ -239,6 +235,7 @@
   text-transform: uppercase;
   color: #102654;
   border: 2px solid #102654;
+  user-select: none;
 
   @media (max-width: 1199px) {
     margin-bottom: 20px;

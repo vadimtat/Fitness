@@ -3,6 +3,7 @@
   padding-top: 120px;
   background: #f8f9fc;
   padding-bottom: 120px;
+  position: relative;
 
   @media (max-width: 1199px) {
     padding-top: 102px;
@@ -13,10 +14,6 @@
     padding-top: 64px;
     padding-bottom: 69px;
   }
-}
-
-.subscription__row {
-  position: relative;
 }
 
 .subscription__title {
@@ -45,6 +42,16 @@
 
 .subscription__image {
   position: absolute;
-  right: -300px;
-  top: 350px;
+  right: -13.5%;
+  top: 60%;
+
+  @media (max-width: 1199px) {
+    width: 420px;
+    right: -9.5%;
+    top: 82%;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }

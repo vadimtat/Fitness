@@ -1,6 +1,6 @@
 .advantages-card {
   display: flex;
-  max-height: 80px;
+  min-height: 80px;
 
   @media (max-width: 767px) {
     flex-direction: column;

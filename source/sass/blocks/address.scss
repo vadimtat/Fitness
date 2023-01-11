@@ -136,11 +136,17 @@
   display: flex;
   align-items: center;
   color: #102654;
+  transition: all 0.3s;
 
   @media (max-width: 1199px) {
     margin: 6px 0 0;
     font-size: 18px;
     line-height: 152.34%;
+  }
+
+  &:hover,
+  &:focus {
+    color: #868686;
   }
 }
 

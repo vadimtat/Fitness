@@ -169,3 +169,33 @@
 .comment__next {
   margin: auto 0;
 }
+
+.comment__prev-icon {
+  cursor: pointer;
+  transition: all 0.2s;
+
+  @media (max-width: 767px) {
+    width: 11px;
+    height: 22px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.comment__next-icon {
+  cursor: pointer;
+  transition: all 0.2s;
+
+  @media (max-width: 767px) {
+    width: 11px;
+    height: 22px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}

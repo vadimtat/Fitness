@@ -17,7 +17,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__row">
-        <a href="#" class="header__logo">SUPERGYM</a>
+        <a class="header__logo">SUPERGYM</a>
         <a href="tel:88005555555" class="header__phone">8-800-555-55-55</a>
       </div>
     </header>
@@ -36,7 +36,7 @@
                 центр
 
               </h1>
-              <a href="#subscription"" class=" left-side__button">Купить абонемент</a>
+              <a href="#subscription" class="left-side__button">Купить абонемент</a>
             </div>
           </div>
           <div class="main-block__right-side">
@@ -93,7 +93,7 @@
             </div>
             <div class="tabs__body">
               <div id="tab01" class="tabs__block">
-                <div class="tabs__card">
+                <div class="tabs__card" tabindex="0">
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
                   <b class="tabs__price">5000<svg class="tabs__icon" width="30" height="42">
@@ -103,9 +103,9 @@
                   </b>
                   <a href="#" class="tabs__button">купить абонемент</a>
                 </div>
-                <div class="tabs__card">
-                  <h3>С тренером</h3>
-                  <p>12 занятий</p>
+                <div class="tabs__card" tabindex="0">
+                  <h3>Дневной</h3>
+                  <p>с 8:00 до 17:00</p>
                   <b class="tabs__price">1700<svg class="tabs__icon" width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
@@ -113,9 +113,9 @@
                   </b>
                   <a href="#" class="tabs__button">купить абонемент</a>
                 </div>
-                <div class="tabs__card">
-                  <h3>С тренером</h3>
-                  <p>12 занятий</p>
+                <div class="tabs__card" tabindex="0">
+                  <h3>Полный день</h3>
+                  <p>с 8:00 до 22:00</p>
                   <b class="tabs__price">2700<svg class="tabs__icon" width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
@@ -125,7 +125,7 @@
                 </div>
               </div>
               <div id="tab02" class="tabs__block">
-                <div class="tabs__card">
+                <div class="tabs__card" tabindex="0">
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
                   <b class="tabs__price">8000<svg class="tabs__icon" width="30" height="42">
@@ -135,9 +135,9 @@
                   </b>
                   <a href="#" class="tabs__button">купить абонемент</a>
                 </div>
-                <div class="tabs__card">
-                  <h3>С тренером</h3>
-                  <p>12 занятий</p>
+                <div class="tabs__card" tabindex="0">
+                  <h3>Дневной</h3>
+                  <p>с 8:00 до 17:00</p>
                   <b class="tabs__price">4500<svg class="tabs__icon" width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
@@ -145,9 +145,9 @@
                   </b>
                   <a href="#" class="tabs__button">купить абонемент</a>
                 </div>
-                <div class="tabs__card">
-                  <h3>С тренером</h3>
-                  <p>12 занятий</p>
+                <div class="tabs__card" tabindex="0">
+                  <h3>Полный день</h3>
+                  <p>с 8:00 до 22:00</p>
                   <b class="tabs__price">6000<svg class="tabs__icon" width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
@@ -157,7 +157,7 @@
                 </div>
               </div>
               <div id="tab03" class="tabs__block">
-                <div class="tabs__card">
+                <div class="tabs__card" tabindex="0">
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
                   <b class="tabs__price">9000<svg class="tabs__icon" width="30" height="42">
@@ -167,9 +167,9 @@
                   </b>
                   <a href="#" class="tabs__button">купить абонемент</a>
                 </div>
-                <div class="tabs__card">
-                  <h3>С тренером</h3>
-                  <p>12 занятий</p>
+                <div class="tabs__card" tabindex="0">
+                  <h3>Дневной</h3>
+                  <p>с 8:00 до 17:00</p>
                   <b class="tabs__price">5000<svg class="tabs__icon" width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
@@ -177,9 +177,9 @@
                   </b>
                   <a href="#" class="tabs__button">купить абонемент</a>
                 </div>
-                <div class="tabs__card">
-                  <h3>С тренером</h3>
-                  <p>12 занятий</p>
+                <div class="tabs__card" tabindex="0">
+                  <h3>Полный день</h3>
+                  <p>с 8:00 до 22:00</p>
                   <b class="tabs__price">7500<svg class="tabs__icon" width="30" height="42">
                       <use href="img/sprite.svg#ruble"></use>
                     </svg>
@@ -190,7 +190,7 @@
               </div>
             </div>
           </div>
-          <!-- <img class="subscription__image" src="../img/subscription/subscription.png" alt="блины"> -->
+          <img class="subscription__image" src="../img/subscription/subscription.png" alt="блины">
         </div>
       </section>
       <section class="contest">
@@ -210,7 +210,7 @@
                 </div>
               </div>
             </div>
-            <p class="contest__text">Ежегодные соревнования по CrossFit</p>
+            <p class="contest__text">Ежегодные соревнования по&nbsp;CrossFit</p>
             <a class="contest__button" href="#">заполнить заявку</a>
           </div>
           <picture class="contest__image">
@@ -224,11 +224,11 @@
         <h2>Тренеры</h2>
         <div class="trainer__row">
           <div class="trainer__navigation">
-            <div id="trainerPrev" class="trainer__prev"><svg class="swiper__prev" fill="none" width="18" height="34">
+            <div id="trainerPrev" class="trainer__prev"><svg class="trainer__prev-icon" width="18" height="34">
                 <use href="img/sprite.svg#swiperprev"></use>
               </svg>
             </div>
-            <div id="trainerNext" class="trainer__next"><svg class="swiper__next" width="18" height="34">
+            <div id="trainerNext" class="trainer__next"><svg class="trainer__next-icon" width="18" height="34">
                 <use href="img/sprite.svg#swipernext"></use>
               </svg>
             </div>
@@ -236,7 +236,7 @@
           <div class="trainer__swiper swiper">
             <div class="trainer__wrapper swiper-wrapper">
               <div class=" trainer__slide swiper-slide">
-                <div class="trainer-card">
+                <div class="trainer-card" tabindex="0">
                   <h3 class="trainer-card__title">Анна Павлова</h3>
                   <img class="trainer-card__image" src="../img/trainer/trainer.png" alt="Тренер" width="260"
                     height="294" />
@@ -249,7 +249,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="trainer-card">
+                <div class="trainer-card" tabindex="0">
                   <h3 class="trainer-card__title">Анна Павлова</h3><img class="trainer-card__image"
                     src="../img/trainer/trainer.png" alt="Тренер" width="260" height="294" />
                   <p class="trainer-card__subtitle">CrossFit</p>
@@ -261,7 +261,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="trainer-card">
+                <div class="trainer-card" tabindex="0">
                   <h3 class="trainer-card__title">Анна Павлова</h3><img class="trainer-card__image"
                     src="../img/trainer/trainer.png" alt="Тренер" width="260" height="294" />
                   <p class="trainer-card__subtitle">CrossFit</p>
@@ -273,7 +273,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="trainer-card">
+                <div class="trainer-card" tabindex="0">
                   <h3 class="trainer-card__title">Александр Пашков</h3><img class="trainer-card__image"
                     src="../img/trainer/trainer.png" alt="Тренер" width="260" height="294" />
                   <p class="trainer-card__subtitle">CrossFit</p>
@@ -342,7 +342,7 @@
             <div class="stock__promo">
               <h4>Год</h4>
               <h3>4999</h3>
-              <p>Безлимитный абонемент в тренажерный зал</p>
+              <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
               <a href="#">подробнее</a>
             </div>
             <picture class="stock__image">
@@ -359,7 +359,7 @@
             </div>
             <div class="stock-card">
               <h3>Скидка 20%</h3>
-              <p>Корпоративный фитнес с командой</p>
+              <p>Корпоративный фитнес с&nbsp;командой</p>
               <a href="#">подробнее</a>
             </div>
           </div>
@@ -369,11 +369,11 @@
         <h2 class="comment__title">Отзывы</h2>
         <div class="comment__row">
           <div class="comment__navigation">
-            <div id="commentPrev" class="comment__prev"><svg class="swiper__prev" width="18" height="34">
+            <div id="commentPrev" class="comment__prev"><svg class="comment__prev-icon" width="18" height="34">
                 <use href="img/sprite.svg#swiperprev"></use>
               </svg>
             </div>
-            <div id="commentNext" class="comment__next"><svg class="swiper__next" width="18" height="34">
+            <div id="commentNext" class="comment__next"><svg class="comment__next-icon" width="18" height="34">
                 <use href="img/sprite.svg#swipernext"></use>
               </svg>
             </div>
@@ -425,7 +425,7 @@
                 </div>
                 <div class="address__card">
                   <h4>Email:</h4>
-                  <p>omsk@supergym.ru</p>
+                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
                 </div>
               </div>
             </div>

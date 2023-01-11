@@ -110,6 +110,8 @@
   border: 4px solid #ffffff;
   text-align: center;
   max-width: 230px;
+  user-select: none;
+  transition: all 0.2s;
 
   @media (max-width: 1199px) {
     max-width: 185px;
@@ -120,5 +122,11 @@
   @media (max-width: 767px) {
     max-width: 290px;
     margin-top: 24px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #868686;
+    border: 4px solid #868686;
   }
 }

@@ -182,6 +182,7 @@
   text-transform: uppercase;
   color: #ffffff;
   border: 4px solid #ffffff;
+  user-select: none;
 
   @media (max-width: 1199px) {
     font-size: 10px;
@@ -195,7 +196,8 @@
     margin-bottom: 31px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   }
 }

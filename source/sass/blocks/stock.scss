@@ -7,7 +7,16 @@
   }
 
   @media (max-width: 767px) {
-    padding-top: 101px;
+    padding-top: 34px;
+  }
+}
+
+.stock a {
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus {
+    color: #868686;
   }
 }
 
@@ -48,19 +57,19 @@
 
 .stock__left-block {
   max-width: 560px;
-  max-height: 462px;
+  min-height: 462px;
   display: flex;
 
   @media (max-width: 1199px) {
     margin: 0 auto;
     max-width: 680px;
-    max-height: 462px;
+    min-height: 462px;
   }
 
   @media (max-width: 767px) {
     max-width: none;
     flex-direction: column;
-    max-height: none;
+    min-height: none;
   }
 }
 
