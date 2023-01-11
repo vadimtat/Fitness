@@ -63,10 +63,10 @@ export function initSwiper() {
     const commentNext = document.getElementById('commentNext');
 
     commentPrev.addEventListener('click', () => {
-      swiperTwo.commentPrev();
+      swiperTwo.slidePrev();
     });
     commentNext.addEventListener('click', () => {
-      swiperTwo.commentNext();
+      swiperTwo.slideNext();
     });
   }
 }

@@ -1,5 +1,5 @@
 import {initVideo} from './video';
-import {initSwiper, initSwiper2} from './swiper';
+import {initSwiper} from './swiper';
 import {initTabs} from './tabs';
 import {initForms} from './valid';
 import {initMaskPhone} from './mask';
@@ -13,7 +13,6 @@ window.addEventListener('DOMContentLoaded', () => {
   initVideo();
   initSwiper();
   initTabs();
-  initSwiper2();
   initForms();
   initMaskPhone();
 
