@@ -1100,6 +1100,7 @@ button,
   background: rgba(20, 54, 122, 0.5);
   z-index: 2;
   cursor: pointer;
+  pointer-events: none;
 }
 
 .video__wrapper {
@@ -1146,6 +1147,10 @@ button,
 
 .video--enabled {
   cursor: pointer;
+}
+
+.video--enabled .video__overlay {
+  pointer-events: all;
 }
 
 .video--enabled .video__button {

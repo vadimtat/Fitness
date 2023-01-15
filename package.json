@@ -61,6 +61,7 @@
     "node": ">=16.15.1"
   },
   "dependencies": {
-    "inputmask": "^5.0.7"
+    "inputmask": "^5.0.7",
+    "swiper": "^8.4.5"
   }
 }
