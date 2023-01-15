@@ -10,8 +10,8 @@
   }
 
   @media (max-width: 767px) {
-    padding: 0;
     padding-bottom: 62px;
+    padding-top: 64px;
   }
 }
 
@@ -35,7 +35,6 @@
   }
 
   @media (max-width: 767px) {
-    margin-top: 34px;
     font-size: 32px;
     line-height: 38px;
   }
@@ -98,6 +97,7 @@
   color: #ffffff;
 
   @media (max-width: 1199px) {
+    margin: 5px 0 0;
     font-size: 22px;
   }
 

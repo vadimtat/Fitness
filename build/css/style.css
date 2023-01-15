@@ -3203,6 +3203,7 @@ button,
   }
 
   .advantages__center-block h3 {
+    margin: 5px 0 0;
     font-size: 22px;
   }
 
@@ -3348,7 +3349,7 @@ button,
 
   .contacts {
     min-height: 648px;
-    padding-bottom: 61px;
+    padding-bottom: 59px;
     --grad-stop: 48%;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(16, 38, 84)), to(transparent));
     background-image: -o-linear-gradient(top, rgb(16, 38, 84) var(--grad-stop), transparent var(--grad-stop));
@@ -3667,6 +3668,7 @@ button,
   }
 
   .trainer {
+    padding-bottom: 66px;
     margin: 0 30px;
   }
 
@@ -3721,12 +3723,11 @@ button,
   }
 
   .advantages {
-    padding: 0;
     padding-bottom: 62px;
+    padding-top: 64px;
   }
 
   .advantages__title {
-    margin-top: 34px;
     font-size: 32px;
     line-height: 38px;
   }
@@ -3951,7 +3952,7 @@ button,
   }
 
   .contacts {
-    --grad-stop: 43.5%;
+    --grad-stop: 43%;
   }
 
   .form {
