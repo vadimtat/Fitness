@@ -1153,11 +1153,14 @@ button,
 }
 
 .subscription {
-  padding: 0 var(--side-offset, 20px);
+  padding: 120px var(--side-offset, 20px) 240px;
   padding-top: 120px;
-  background: #f8f9fc;
-  padding-bottom: 120px;
+  --grad-stop: 87.5%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(248, 249, 252)), to(transparent));
+  background-image: -o-linear-gradient(top, rgb(248, 249, 252) var(--grad-stop), transparent var(--grad-stop));
+  background-image: linear-gradient(180deg, rgb(248, 249, 252) var(--grad-stop), transparent var(--grad-stop));
   position: relative;
+  overflow: hidden;
 }
 
 .subscription__title {
@@ -1176,7 +1179,7 @@ button,
 .subscription__image {
   position: absolute;
   right: -13.5%;
-  top: 60%;
+  bottom: -30px;
 }
 
 .tabs__list {
@@ -1377,7 +1380,6 @@ button,
 
 .contest {
   padding: 0 var(--side-offset, 20px);
-  padding-top: 120px;
   padding-bottom: 106px;
 }
 
@@ -1836,7 +1838,7 @@ button,
   padding: 0 var(--side-offset, 20px);
   padding-bottom: 200px;
   padding-top: 135px;
-  background: #F8F9FC;
+  background: #f8f9fc;
 }
 
 .advantages__title {
@@ -3011,8 +3013,9 @@ button,
   }
 
   .subscription {
+    --grad-stop: 94.5%;
     padding-top: 102px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
   }
 
   .subscription__title {
@@ -3023,7 +3026,7 @@ button,
   .subscription__image {
     width: 420px;
     right: -9.5%;
-    top: 82%;
+    bottom: -23px;
   }
 
   .tabs__list {
@@ -3066,7 +3069,6 @@ button,
   }
 
   .contest {
-    padding-top: 100px;
     padding-bottom: 100px;
   }
 
