@@ -1183,7 +1183,7 @@ button,
 
 .subscription__image {
   position: absolute;
-  right: -13.5%;
+  right: -183px;
   bottom: -30px;
 }
 
@@ -3030,7 +3030,7 @@ button,
 
   .subscription__image {
     width: 420px;
-    right: -9.5%;
+    right: -73px;
     bottom: -23px;
   }
 
