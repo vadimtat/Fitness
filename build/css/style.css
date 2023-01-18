@@ -1060,13 +1060,13 @@ button,
   position: relative;
   width: 100%;
   max-width: 660px;
-  height: 401px;
+  min-height: 401px;
   display: block;
 }
 
 .information__image {
   width: 100%;
-  height: 100%;
+  height: 401px;
   background-image: -webkit-image-set(url("../img/information/informationphoto.png") 1x, url("../img/information/informationphoto2x.png") 2x);
   background-image: image-set("../img/information/informationphoto.png" 1x, "../img/information/informationphoto2x.png" 2x);
 }
@@ -1588,7 +1588,7 @@ button,
 
 .trainer {
   padding: 0 var(--side-offset, 20px);
-  padding-bottom: 100px;
+  padding-bottom: 90px;
 }
 
 .trainer h2 {
@@ -1615,7 +1615,6 @@ button,
 
 .trainer__navigation {
   position: absolute;
-  width: 100%;
   top: 50%;
   margin-top: -18px;
   display: -webkit-box;
@@ -1624,16 +1623,17 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  width: 100%;
 }
 
 .trainer__prev {
   position: absolute;
-  left: -5%;
+  left: 0;
 }
 
 .trainer__next {
   position: absolute;
-  right: -5%;
+  right: 0;
 }
 
 .trainer__prev-icon {
@@ -1834,7 +1834,7 @@ button,
 .advantages {
   padding: 0 var(--side-offset, 20px);
   padding-bottom: 200px;
-  padding-top: 135px;
+  padding-top: 145px;
   background: #f8f9fc;
 }
 
@@ -2376,9 +2376,7 @@ button,
 
 .comment__navigation {
   position: absolute;
-  width: 100%;
-  max-width: 734px;
-  padding: 0 30px;
+  max-width: 673px;
   top: 50%;
   margin-top: -18px;
   display: -webkit-box;
@@ -2387,6 +2385,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  width: 100%;
 }
 
 .comment__prev {
@@ -2995,10 +2994,10 @@ button,
     margin: 0 auto;
     margin-top: 42px;
     max-width: 678px;
-    height: 345px;
   }
 
   .information__image {
+    height: 345px;
     background-image: -webkit-image-set(url("../img/information/informationphototab.png") 1x, url("../img/information/informationphototab2x.png") 2x);
     background-image: image-set("../img/information/informationphototab.png" 1x, "../img/information/informationphototab2x.png" 2x);
   }
@@ -3148,6 +3147,10 @@ button,
   .contest__time-numer::before {
     width: 56px;
     top: 2px;
+  }
+
+  .trainer {
+    padding-bottom: 100px;
   }
 
   .trainer h2 {
@@ -3521,9 +3524,7 @@ button,
   }
 
   .information {
-    padding: 0;
-    padding-top: 64px;
-    padding-bottom: 277px;
+    padding: 64px 0 71px;
   }
 
   .information h2 {
@@ -3557,9 +3558,18 @@ button,
   }
 
   .information__right-side {
-    position: static;
-    height: 313px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin: 33px auto 0;
+  }
+
+  .information__image {
+    height: 313px;
   }
 
   .video {
@@ -3568,7 +3578,7 @@ button,
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
-    width: 320px;
+    width: 100%;
     height: 167px;
     margin-top: 40px;
   }
@@ -3628,6 +3638,8 @@ button,
 
   .tabs__icon {
     margin-left: 11px;
+    width: 24px;
+    height: 33px;
   }
 
   .tabs__price-shadow {
@@ -3670,8 +3682,7 @@ button,
   }
 
   .trainer {
-    padding-bottom: 66px;
-    margin: 0 30px;
+    padding-bottom: 71px;
   }
 
   .trainer h2 {
@@ -3680,17 +3691,18 @@ button,
     line-height: 38px;
   }
 
+  .trainer__row {
+    max-width: none;
+  }
+
   .trainer__navigation {
+    width: 100%;
     margin-top: -11px;
-    min-width: 226px;
   }
 
-  .trainer__prev {
-    left: -13%;
-  }
-
-  .trainer__next {
-    right: -14%;
+  .trainer__swiper {
+    max-width: none;
+    width: calc(100% - 64px);
   }
 
   .trainer__prev-icon {
@@ -3907,7 +3919,8 @@ button,
   .comment__block {
     position: relative;
     padding: 25px;
-    max-width: 226px;
+    max-width: none;
+    width: calc(100% - 30px);
     min-height: 335px;
   }
 
@@ -3926,6 +3939,7 @@ button,
 
   .comment__text {
     margin-left: 0;
+    max-width: none;
   }
 
   .comment__text h4 {
@@ -3940,11 +3954,14 @@ button,
   }
 
   .comment__swiper {
-    max-width: 226px;
+    width: calc(100% - 64px);
+    max-width: none;
   }
 
   .comment__navigation {
+    max-width: none;
     margin-top: -11px;
+    padding: 0;
   }
 
   .comment__prev-icon {
