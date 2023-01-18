@@ -579,6 +579,7 @@ button,
 
 :root {
   --side-offset: calc(50vw - 580px);
+  --side-offset2: calc(50vw - 636px);
 }
 
 .wrapper {
@@ -1587,12 +1588,13 @@ button,
 }
 
 .trainer {
-  padding: 0 var(--side-offset, 20px);
+  padding: 0 var(--side-offset2, 20px);
   padding-bottom: 90px;
 }
 
 .trainer h2 {
   margin: 0;
+  margin-left: 58px;
   margin-bottom: 50px;
   font-family: "Alumni Sans", sans-serif;
   font-style: normal;
@@ -1636,6 +1638,11 @@ button,
   right: 0;
 }
 
+.trainer__swiper {
+  margin: 0 auto;
+  width: calc(100% - 110px);
+}
+
 .trainer__prev-icon {
   cursor: pointer;
   -webkit-transition: all 0.2s;
@@ -1658,6 +1665,10 @@ button,
 .trainer__next-icon:hover,
 .trainer__next-icon:focus {
   opacity: 0.5;
+}
+
+.trainer__slide {
+  width: 260px;
 }
 
 .trainer-card {
@@ -1815,20 +1826,6 @@ button,
 
 .swiper-button-prev::after {
   display: none;
-}
-
-.swiper-navigation {
-  width: 100%;
-  max-width: 1160px;
-  height: 294px;
-  top: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  position: absolute;
 }
 
 .advantages {
@@ -2882,6 +2879,12 @@ button,
   }
 }
 
+@media (max-width: 1312px) {
+  :root {
+    --side-offset2: 20px;
+  }
+}
+
 @media (max-width: 1260px) {
   :root {
     --side-offset: 45px;
@@ -2948,7 +2951,7 @@ button,
 
   .information {
     padding-top: 101px;
-    padding-bottom: 183px;
+    padding-bottom: 127px;
   }
 
   .information__row {
@@ -3154,6 +3157,7 @@ button,
   }
 
   .trainer h2 {
+    margin-left: 0;
     margin-bottom: 32px;
     text-align: center;
     font-size: 42px;
@@ -3455,6 +3459,7 @@ button,
 @media (max-width: 767px) {
   :root {
     --side-offset: 15px;
+    --side-offset2: 15px;
   }
 
   .container {

@@ -1,5 +1,5 @@
 .trainer {
-  padding: 0 var(--side-offset, 20px);
+  padding: 0 var(--side-offset2, 20px);
   padding-bottom: 90px;
 
   @media (max-width: 1199px) {
@@ -12,6 +12,7 @@
 
 .trainer h2 {
   margin: 0;
+  margin-left: 58px;
   margin-bottom: 50px;
   font-family: $ff-accent;
   font-style: normal;
@@ -23,6 +24,7 @@
   color: #102654;
 
   @media (max-width: 1199px) {
+    margin-left: 0;
     margin-bottom: 32px;
     text-align: center;
     font-size: 42px;
@@ -56,6 +58,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+
   @media (max-width: 767px) {
     width: 100%;
     margin-top: -11px;
@@ -64,6 +67,7 @@
 
 .trainer__prev {
   position: absolute;
+  // left: -5%;
   left: 0;
   @media (max-width: 1199px) {
     left: 0;
@@ -75,6 +79,7 @@
 
 .trainer__next {
   position: absolute;
+  // right: -5%;
   right: 0;
 
   @media (max-width: 1199px) {
@@ -86,6 +91,9 @@
 }
 
 .trainer__swiper {
+  margin: 0 auto;
+  width: calc(100% - 110px);
+
   @media (max-width: 1199px) {
     max-width: 566px;
   }
@@ -123,4 +131,7 @@
   &:focus {
     opacity: 0.5;
   }
+}
+.trainer__slide {
+  width: 260px;
 }
