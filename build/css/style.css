@@ -2184,7 +2184,7 @@ button,
 }
 
 .stock__image img {
-  min-width: 280px;
+  max-width: 280px;
   height: 462px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -2192,6 +2192,7 @@ button,
 
 .stock__right-block {
   width: 100%;
+  margin-left: 20px;
   max-width: 560px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3305,6 +3306,7 @@ button,
 
   .stock__left-block {
     margin: 0 auto;
+    min-width: none;
     max-width: 680px;
     min-height: 462px;
   }
@@ -3835,6 +3837,7 @@ button,
   }
 
   .stock__left-block {
+    width: none;
     max-width: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3847,6 +3850,7 @@ button,
     text-align: center;
     min-width: 240px;
     max-width: 290px;
+    margin: 0 auto;
   }
 
   .stock__promo p {
@@ -3863,6 +3867,7 @@ button,
     min-width: 240px;
     max-width: 290px;
     height: 299px;
+    margin: 0 auto;
   }
 
   .stock__right-block {
