@@ -3,8 +3,9 @@
   padding-bottom: 90px;
 
   @media (max-width: 1199px) {
-      padding-bottom: 100px;
+    padding-bottom: 100px;
   }
+
   @media (max-width: 767px) {
     padding-bottom: 71px;
   }
@@ -46,18 +47,19 @@
     margin: 0 auto;
     max-width: 678px;
   }
-    @media (max-width: 767px) {
-      max-width: none;
+
+  @media (max-width: 767px) {
+    max-width: none;
   }
 }
 
 .trainer__navigation {
   position: absolute;
-    top: 50%;
-    margin-top: -18px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  top: 50%;
+  margin-top: -18px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 
   @media (max-width: 767px) {
     width: 100%;
@@ -67,27 +69,12 @@
 
 .trainer__prev {
   position: absolute;
-  // left: -5%;
   left: 0;
-  @media (max-width: 1199px) {
-    left: 0;
-  }
-
-  @media (max-width: 767px) {
-  }
 }
 
 .trainer__next {
   position: absolute;
-  // right: -5%;
   right: 0;
-
-  @media (max-width: 1199px) {
-    right: 0;
-  }
-
-  @media (max-width: 767px) {
-  }
 }
 
 .trainer__swiper {
@@ -97,9 +84,10 @@
   @media (max-width: 1199px) {
     max-width: 566px;
   }
+
   @media (max-width: 767px) {
     max-width: none;
-  width: calc(100% - 64px);
+    width: calc(100% - 64px);
   }
 }
 
@@ -132,6 +120,7 @@
     opacity: 0.5;
   }
 }
+
 .trainer__slide {
   width: 260px;
 }

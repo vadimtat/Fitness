@@ -9,7 +9,7 @@
   }
 
   @media (max-width: 767px) {
-  padding: 64px 0 71px;
+    padding: 64px 0 71px;
   }
 }
 
@@ -148,10 +148,11 @@
   // background-size: cover;
 
   @media (max-width: 1199px) {
-  height: 345px;
+    height: 345px;
     background-image: image-set("../img/information/informationphototab.png" 1x, "../img/information/informationphototab2x.png" 2x);
   }
-    @media (max-width: 767px) {
-      height: 313px;
-    }
+
+  @media (max-width: 767px) {
+    height: 313px;
+  }
 }

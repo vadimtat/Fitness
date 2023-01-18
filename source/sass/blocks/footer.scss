@@ -57,10 +57,11 @@
     position: absolute;
     top: 16px;
   }
-    &:hover,
-    &:focus {
-      color: #868686;
-    }
+
+  &:hover,
+  &:focus {
+    color: #868686;
+  }
 }
 
 .footer__nav {

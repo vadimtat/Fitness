@@ -2,13 +2,16 @@
   // --side-offset: calc(50vw - 588.5px);
   --side-offset: calc(50vw - 580px);
   --side-offset2: calc(50vw - 636px);
+
   // - var(--scrollbarWidth, 0px) / 2
   @media (max-width: (1160px + 50px*2)) {
     --side-offset: 45px;
   }
+
   @media (max-width: (1272px + 20px*2)) {
     --side-offset2: 20px;
   }
+
   @media (max-width: 767px) {
     --side-offset: 15px;
     --side-offset2: 15px;

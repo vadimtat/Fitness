@@ -3169,14 +3169,6 @@ button,
     max-width: 678px;
   }
 
-  .trainer__prev {
-    left: 0;
-  }
-
-  .trainer__next {
-    right: 0;
-  }
-
   .trainer__swiper {
     max-width: 566px;
   }
