@@ -17,7 +17,10 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__row">
-        <a class="header__logo">SUPERGYM</a>
+        <a class="header__logo" tabindex="1"><svg width="119" height="23" fill="currentColor">
+          <use href="img/sprite.svg#logo"></use>
+        </svg>
+</a>
         <a href="tel:88005555555" class="header__phone">8-800-555-55-55</a>
       </div>
     </header>
@@ -239,7 +242,7 @@
               <div class="trainer__slide swiper-slide">
                 <div class="trainer-card" tabindex="0">
                   <h3 class="trainer-card__title">Анна Павлова</h3>
-                  <img class="trainer-card__image" src="../img/trainer/trainer.jpg" alt="Тренер" width="260"
+                  <img class="trainer-card__image" src="./img/trainer/trainer.jpg" alt="Тренер" width="260"
                     height="294" />
                   <p class="trainer-card__subtitle">CrossFit</p>
                   <ul class="trainer-card__info">
@@ -264,7 +267,7 @@
               <div class="trainer__slide swiper-slide">
                 <div class="trainer-card" tabindex="0">
                   <h3 class="trainer-card__title">Александр Пашков</h3><img class="trainer-card__image"
-                    src="../img/trainer/trainer3.jpg" alt="Тренер" width="260" height="294" />
+                    src="./img/trainer/trainer3.jpg" alt="Тренер" width="260" height="294" />
                   <p class="trainer-card__subtitle">CrossFit</p>
                   <ul class="trainer-card__info">
                     <li class="trainer-card__value">Certified Level 3 Trainer</li>
@@ -276,7 +279,7 @@
               <div class="trainer__slide swiper-slide">
                 <div class="trainer-card" tabindex="0">
                   <h3 class="trainer-card__title">Александр Пашков</h3><img class="trainer-card__image"
-                    src="../img/trainer/trainer4.jpg" alt="Тренер" width="260" height="294" />
+                    src="./img/trainer/trainer4.jpg" alt="Тренер" width="260" height="294" />
                   <p class="trainer-card__subtitle">CrossFit</p>
                   <ul class="trainer-card__info">
                     <li class="trainer-card__value">Certified Level 3 Trainer</li>
@@ -288,7 +291,7 @@
               <div class="trainer__slide swiper-slide">
                 <div class="trainer-card" tabindex="0">
                   <h3 class="trainer-card__title">Анна Павлова</h3>
-                  <img class="trainer-card__image" src="../img/trainer/trainer.jpg" alt="Тренер" width="260"
+                  <img class="trainer-card__image" src="./img/trainer/trainer.jpg" alt="Тренер" width="260"
                     height="294" />
                   <p class="trainer-card__subtitle">CrossFit</p>
                   <ul class="trainer-card__info">
@@ -301,7 +304,7 @@
               <div class="trainer__slide swiper-slide">
                 <div class="trainer-card" tabindex="0">
                   <h3 class="trainer-card__title">Алексей Лавров</h3><img class="trainer-card__image"
-                    src="../img/trainer/trainer2.jpg" alt="Тренер" width="260" height="294" />
+                    src="./img/trainer/trainer2.jpg" alt="Тренер" width="260" height="294" />
                   <p class="trainer-card__subtitle">CrossFit</p>
                   <ul class="trainer-card__info">
                     <li class="trainer-card__value">Certified Level 3 Trainer</li>
@@ -313,7 +316,7 @@
               <div class="trainer__slide swiper-slide">
                 <div class="trainer-card" tabindex="0">
                   <h3 class="trainer-card__title">Александр Пашков</h3><img class="trainer-card__image"
-                    src="../img/trainer/trainer3.jpg" alt="Тренер" width="260" height="294" />
+                    src="./img/trainer/trainer3.jpg" alt="Тренер" width="260" height="294" />
                   <p class="trainer-card__subtitle">CrossFit</p>
                   <ul class="trainer-card__info">
                     <li class="trainer-card__value">Certified Level 3 Trainer</li>
@@ -325,7 +328,7 @@
               <div class="trainer__slide swiper-slide">
                 <div class="trainer-card" tabindex="0">
                   <h3 class="trainer-card__title">Александр Пашков</h3><img class="trainer-card__image"
-                    src="../img/trainer/trainer4.jpg" alt="Тренер" width="260" height="294" />
+                    src="./img/trainer/trainer4.jpg" alt="Тренер" width="260" height="294" />
                   <p class="trainer-card__subtitle">CrossFit</p>
                   <ul class="trainer-card__info">
                     <li class="trainer-card__value">Certified Level 3 Trainer</li>
@@ -393,7 +396,7 @@
               <h4>Год</h4>
               <h3>4999</h3>
               <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
-              <a href="#">подробнее</a>
+              <div class="stock__button"><a href="#">подробнее</a></div>
             </div>
             <picture class="stock__image">
               <source type="image/webp" srcset="./img/stock/stockphoto.webp 1x, ./img/stock/stockphoto2x.webp 2x">
@@ -405,12 +408,12 @@
             <div class="stock-card">
               <h3>Месяц бесплатно</h3>
               <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
-              <a href="#">подробнее</a>
+              <div class="stock__button"><a href="#">подробнее</a></div>
             </div>
             <div class="stock-card">
               <h3>Скидка 20%</h3>
               <p>Корпоративный фитнес с&nbsp;командой</p>
-              <a href="#">подробнее</a>
+              <div class="stock__button"><a href="#">подробнее</a></div>
             </div>
           </div>
         </div>
@@ -486,7 +489,9 @@
     <footer class="footer">
       <div class="footer__row">
         <div class="footer__logo">
-          <a href="#">SUPERGYM</a>
+          <a href="#"><svg width="86" height="17" fill="currentColor">
+            <use href="img/sprite.svg#logo"></use>
+          </svg></a>
         </div>
         <nav class="footer__nav">
           <ul class="footer__list">

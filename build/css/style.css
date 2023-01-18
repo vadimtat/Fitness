@@ -805,6 +805,7 @@ button,
   padding: 0 var(--side-offset, 20px);
   padding-top: 30px;
   position: absolute;
+  z-index: 2;
 }
 
 .header__row {
@@ -816,28 +817,18 @@ button,
   justify-content: space-between;
 }
 
-.header__logo {
-  font-family: "Alumni Sans", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 43px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  letter-spacing: 0.02em;
+.header__logo svg {
+  display: block;
+  margin-top: 10px;
   color: #ffffff;
+  z-index: 10;
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  z-index: 10;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  cursor: pointer;
 }
 
-.header__logo:hover {
+.header__logo svg:hover {
   color: #868686;
 }
 
@@ -927,6 +918,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  z-index: 0;
 }
 
 .left-side__city {
@@ -2165,9 +2157,15 @@ button,
   color: #ffffff;
 }
 
+.stock__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: auto;
+}
+
 .stock__promo a {
   display: inline-block;
-  margin-top: auto;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -2760,22 +2758,21 @@ button,
   align-items: center;
 }
 
-.footer__logo {
-  margin-top: 12px;
-  font-family: "Alumni Sans", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  letter-spacing: 0.02em;
+.footer__logo svg {
+  margin-top: 15px;
   color: #ffffff;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer__logo svg:hover,
+.footer__logo svg:focus {
+  color: #868686;
 }
 
 .footer__nav {
@@ -2896,10 +2893,10 @@ button,
     padding-top: 34px;
   }
 
-  .header__logo {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
+  .header__logo svg {
+    margin-top: 8px;
+    width: 81px;
+    height: 16px;
   }
 
   .header__phone {
@@ -3424,11 +3421,13 @@ button,
   }
 
   .footer {
-    padding-top: 30px;
+    padding-top: 33px;
     padding-bottom: 32px;
   }
 
-  .footer__logo {
+  .footer__logo svg {
+    width: 81px;
+    height: 16px;
     margin-top: 0;
     font-size: 24px;
   }
@@ -3474,9 +3473,10 @@ button,
     padding-top: 16px;
   }
 
-  .header__logo {
-    font-size: 20px;
-    line-height: 24px;
+  .header__logo svg {
+    margin-top: 6px;
+    width: 67px;
+    height: 13px;
   }
 
   .header__phone {
@@ -3872,6 +3872,7 @@ button,
   }
 
   .stock-card {
+    padding: 27px 27px 38px;
     text-align: center;
     margin: 0 auto;
     margin-top: 30px;
@@ -3884,7 +3885,6 @@ button,
 
   .stock-card a {
     margin: 0 auto;
-    margin-top: 25px;
   }
 
   .comment {
@@ -4017,6 +4017,7 @@ button,
 
   .footer {
     padding-bottom: 47px;
+    padding-top: 31px;
   }
 
   .footer__row {
@@ -4030,11 +4031,12 @@ button,
     flex-direction: column;
   }
 
-  .footer__logo {
+  .footer__logo svg {
+    margin-top: 4px;
+    width: 67px;
+    height: 13px;
     position: absolute;
     top: 16px;
-    font-size: 20px;
-    line-height: 24px;
   }
 
   .footer__list {

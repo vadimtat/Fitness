@@ -126,9 +126,12 @@
   }
 }
 
+.stock__button {
+  display: flex;
+  margin-top: auto;
+}
 .stock__promo a {
   display: inline-block;
-  margin-top: auto;
 
   font-style: normal;
   font-weight: 700;

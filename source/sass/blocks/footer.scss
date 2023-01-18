@@ -5,12 +5,13 @@
   padding-bottom: 28px;
 
   @media (max-width: 1199px) {
-    padding-top: 30px;
+    padding-top: 33px;
     padding-bottom: 32px;
   }
 
   @media (max-width: 767px) {
     padding-bottom: 47px;
+    padding-top: 31px;
   }
 }
 
@@ -36,29 +37,30 @@
   }
 }
 
-.footer__logo {
-  margin-top: 12px;
-  font-family: $ff-accent;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-  align-items: center;
-  letter-spacing: 0.02em;
+.footer__logo svg {
+  margin-top: 15px;
   color: #ffffff;
   user-select: none;
+  transition: all 0.3s;
 
   @media (max-width: 1199px) {
+    width: 81px;
+    height: 16px;
     margin-top: 0;
     font-size: 24px;
   }
 
   @media (max-width: 767px) {
+    margin-top: 4px;
+    width: 67px;
+    height: 13px;
     position: absolute;
     top: 16px;
-    font-size: 20px;
-    line-height: 24px;
   }
+    &:hover,
+    &:focus {
+      color: #868686;
+    }
 }
 
 .footer__nav {
