@@ -3723,6 +3723,7 @@ button,
   }
 
   .advantages {
+    padding: 0;
     padding-bottom: 62px;
     padding-top: 64px;
   }
