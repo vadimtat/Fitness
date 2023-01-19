@@ -17,13 +17,13 @@
 
   &:hover,
   &:focus-within {
-    background: rgba(16, 38, 84, 0.89);
-    padding: 50px 20px;
     overflow: auto;
 
     &::-webkit-scrollbar {
       display: none;
     }
+    background: rgba(16, 38, 84, 0.89);
+    padding: 50px 20px;
   }
 
   &:hover .trainer-card__title,
@@ -34,7 +34,8 @@
   }
 
   &:hover .trainer-card__info,
-  &:focus-within .trainer-card__info {
+  &:focus-within .trainer-card__info,
+  &:hover .trainer-card__image {
     opacity: 1;
     transform: none;
   }
@@ -59,7 +60,7 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   z-index: -1;
 }
 
@@ -97,7 +98,7 @@
   align-items: center;
   color: #b6bdcc;
   text-align: center;
-  transform: translateY(294px - 50px);
+  transform: translateY(500px);
 
   transition: {
     property: transform, opacity;
@@ -115,7 +116,7 @@
   font-size: 14px;
   line-height: 1.4;
   opacity: 0;
-  transform: translateY(294px);
+  transform: translateY(500px);
 
   transition: {
     property: transform, opacity;

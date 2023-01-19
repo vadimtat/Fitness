@@ -28,7 +28,6 @@
 .footer__row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
   @media (max-width: 767px) {
     position: relative;
@@ -38,15 +37,15 @@
 }
 
 .footer__logo svg {
-  margin-top: 15px;
+  margin-top: 25px;
   color: #ffffff;
   user-select: none;
   transition: all 0.3s;
 
   @media (max-width: 1199px) {
+    margin-top: 17px;
     width: 81px;
     height: 16px;
-    margin-top: 0;
     font-size: 24px;
   }
 
@@ -124,6 +123,7 @@
 }
 
 .footer__socials {
+  margin-top: 10px;
   display: flex;
   max-width: 110px;
   flex-wrap: wrap;

@@ -40,7 +40,6 @@ export function initSwiper() {
   const comments = new Swiper('.comment__swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
     scrollbar: {
       el: '.swiper-scrollbar',
     },
