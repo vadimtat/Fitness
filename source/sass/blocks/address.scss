@@ -44,8 +44,6 @@
 
 .address__row {
   position: relative;
-  // display: flex;
-  // justify-content: space-between;
   display: grid;
   grid-template-columns: 2fr 1fr;
   row-gap: 19px;
@@ -57,7 +55,6 @@
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
-    // flex-direction: column;
     grid-template-areas:
       "card1"
       "card2"
@@ -86,9 +83,6 @@
 }
 
 .address__left-block {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
   display: grid;
   gap: 16px;
 }
@@ -100,10 +94,6 @@
   @media (max-width: 767px) {
     margin-left: 0;
   }
-}
-
-.address__card + .address__card {
-  // margin-top: 18px;
 }
 
 .address__card h4 {
@@ -167,9 +157,6 @@
 }
 
 .address__right-block {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
   display: grid;
   gap: 16px;
 
