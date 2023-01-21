@@ -2194,9 +2194,6 @@ button,
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2230,10 +2227,14 @@ button,
 }
 
 .stock__image img {
-  max-width: 280px;
-  height: 462px;
+  min-width: 280px;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.stock__image {
+  display: block;
 }
 
 .stock__right-block {
@@ -3363,7 +3364,12 @@ button,
 
   .stock__image img {
     min-width: 399px;
-    height: 462px;
+  }
+
+  .stock__image {
+    width: 100%;
+    max-width: 399px;
+    max-height: 462px;
   }
 
   .stock__right-block {
@@ -3957,11 +3963,12 @@ button,
   .stock__promo {
     text-align: center;
     min-width: 240px;
-    max-width: 290px;
+    max-width: none;
     margin: 0 auto;
   }
 
   .stock__promo p {
+    text-align: center;
     margin: 19px 0 0;
   }
 
@@ -3972,10 +3979,20 @@ button,
   }
 
   .stock__image img {
-    min-width: 240px;
-    max-width: 290px;
-    height: 299px;
+    -o-object-fit: inherit;
+    object-fit: inherit;
+    width: 100%;
+    aspect-ratio: 290/299;
+    min-width: 290px;
+    min-height: 292px;
     margin: 0 auto;
+  }
+
+  .stock__image {
+    max-width: none;
+    max-height: none;
+    min-width: 290px;
+    min-height: 292px;
   }
 
   .stock__right-block {
