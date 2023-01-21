@@ -43,7 +43,6 @@ export function initSwiper() {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
-    spaceBetween: 40,
     modules: [Navigation, A11y],
     navigation: {
       nextEl: '.comment__next',
