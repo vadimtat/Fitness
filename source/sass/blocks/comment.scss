@@ -153,13 +153,14 @@
 .comment__navigation {
   position: absolute;
   max-width: 673px;
-  top: 50%;
+  top: 123px;
   margin-top: -18px;
   display: flex;
   justify-content: space-between;
   width: 100%;
 
   @media (max-width: 767px) {
+    top: 169px;
     max-width: none;
     margin-top: -11px;
     padding: 0;
