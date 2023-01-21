@@ -50,18 +50,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  // display: flex;
-  // justify-content: space-between;
 
   @media (max-width: 1199px) {
     grid-template-columns: 1fr;
     gap: 30px;
-    // flex-direction: column;
   }
 }
 
 .stock__left-block {
-  // width: 100%;
   max-width: 560px;
   min-height: 462px;
   display: flex;

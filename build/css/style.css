@@ -1354,6 +1354,7 @@ button,
 .tabs__card:focus .tabs__button {
   color: #ffffff;
   border: none;
+  padding: 27px 44px;
   background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 }
