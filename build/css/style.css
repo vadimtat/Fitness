@@ -3348,10 +3348,15 @@ button,
   }
 
   .stock__left-block {
+    width: 100%;
     margin: 0 auto;
-    min-width: none;
-    max-width: 680px;
+    max-width: none;
     min-height: 462px;
+  }
+
+  .stock__promo {
+    width: 100%;
+    max-width: none;
   }
 
   .stock__image img {
@@ -3362,13 +3367,12 @@ button,
   .stock__right-block {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    max-width: 678px;
     margin: 0 auto;
     gap: 30px;
   }
 
   .stock-card {
-    max-width: 324px;
+    max-width: none;
   }
 
   .comment {

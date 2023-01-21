@@ -61,14 +61,15 @@
 }
 
 .stock__left-block {
+  // width: 100%;
   max-width: 560px;
   min-height: 462px;
   display: flex;
 
   @media (max-width: 1199px) {
+    width: 100%;
     margin: 0 auto;
-    min-width: none;
-    max-width: 680px;
+    max-width: none;
     min-height: 462px;
   }
 
@@ -87,7 +88,10 @@
   background: #ed0233;
   max-width: 280px;
   max-height: 462px;
-
+  @media (max-width: 1199px) {
+    width: 100%;
+    max-width: none;
+  }
   @media (max-width: 767px) {
     text-align: center;
     min-width: 240px;
@@ -191,7 +195,6 @@
 
   @media (max-width: 1199px) {
     grid-template-columns: 1fr 1fr;
-    max-width: 678px;
     margin: 0 auto;
     gap: 30px;
   }
