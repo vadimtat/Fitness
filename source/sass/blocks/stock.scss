@@ -52,22 +52,24 @@
   grid-auto-rows: minmax(210px, auto);
   gap: 40px;
   grid-template-areas:
-      "card1 card3"
-      "card1 card4";
+    "card1 card3"
+    "card1 card4";
+
   @media (max-width: 1199px) {
     grid-template-areas:
-        "card1 card1"
-        "card3 card4";
-  grid-auto-rows: auto;
+      "card1 card1"
+      "card3 card4";
+    grid-auto-rows: auto;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
+
   @media (max-width: 767px) {
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "card1"
-    "card3"
-    "card4";
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "card1"
+      "card3"
+      "card4";
   }
 }
 
@@ -201,6 +203,7 @@
 
 .stock__image {
   display: block;
+
   @media (max-width: 1199px) {
     width: 100%;
     max-width: 399px;
@@ -213,20 +216,3 @@
     min-height: 292px;
   }
 }
-
-// .stock__right-block {
-//   width: 100%;
-//   display: grid;
-//   gap: 40px;
-
-
-//   @media (max-width: 1199px) {
-//     grid-template-columns: 1fr 1fr;
-//     margin: 0 auto;
-//     gap: 30px;
-//   }
-
-//   @media (max-width: 767px) {
-//     grid-template-columns: 1fr;
-//   }
-// }
