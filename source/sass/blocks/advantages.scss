@@ -45,7 +45,7 @@
   width: 100%;
   max-width: 240px;
   height: 307px;
-  margin: auto auto;
+  margin: 10px 54px;
   padding: 0 34px;
   background: #1c3374;
   grid-area: centralblock;
@@ -53,9 +53,11 @@
   @media (max-width: 1199px) {
     max-width: 442px;
     height: 239px;
+    margin: 30px 118px;
   }
 
   @media (max-width: 767px) {
+    margin: 0;
     margin-top: 42px;
     margin-bottom: 45px;
   }
@@ -137,8 +139,8 @@
   max-width: 1040px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-auto-rows: 164px;
+  grid-auto-rows: minmax(163.5px, auto);
+  // grid-auto-rows: 164px;
   grid-template-areas:
     "card1 centralblock card3"
     "card2 centralblock card4";
@@ -160,32 +162,5 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-}
-
-.advantages__row::before {
-  position: absolute;
-  top: 50%;
-  content: "";
-  width: 340px;
-  height: 2px;
-  background: rgba(209, 10, 66, 0.2);
-
-  @media (max-width: 1199px) {
-    display: none;
-  }
-}
-
-.advantages__row::after {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  content: "";
-  width: 340px;
-  height: 2px;
-  background: rgba(209, 10, 66, 0.2);
-
-  @media (max-width: 1199px) {
-    display: none;
   }
 }

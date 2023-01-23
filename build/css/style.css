@@ -1892,7 +1892,7 @@ button,
   width: 100%;
   max-width: 240px;
   height: 307px;
-  margin: auto auto;
+  margin: 10px 54px;
   padding: 0 34px;
   background: #1c3374;
   grid-area: centralblock;
@@ -1960,29 +1960,8 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-auto-rows: 164px;
+  grid-auto-rows: minmax(163.5px, auto);
   grid-template-areas: "card1 centralblock card3" "card2 centralblock card4";
-}
-
-.advantages__row::before {
-  position: absolute;
-  top: 50%;
-  content: "";
-  width: 340px;
-  height: 2px;
-  background: rgba(209, 10, 66, 0.2);
-}
-
-.advantages__row::after {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  content: "";
-  width: 340px;
-  height: 2px;
-  background: rgba(209, 10, 66, 0.2);
 }
 
 .advantages-card {
@@ -2055,6 +2034,7 @@ button,
 .advantages-card--one {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  position: relative;
   margin-left: 20px;
   grid-area: card1;
 }
@@ -2062,6 +2042,16 @@ button,
 .address__row > .advantages-card--one {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+}
+
+.advantages-card--one::before {
+  position: absolute;
+  bottom: -1px;
+  left: -18px;
+  content: "";
+  width: 340px;
+  height: 2px;
+  background: rgba(209, 10, 66, 0.2);
 }
 
 .advantages-card--two {
@@ -2080,6 +2070,7 @@ button,
 .advantages-card--three {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
+  position: relative;
   margin-left: 6px;
   grid-area: card3;
 }
@@ -2087,6 +2078,16 @@ button,
 .address__row > .advantages-card--three {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
+}
+
+.advantages-card--three::before {
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  content: "";
+  width: 340px;
+  height: 2px;
+  background: rgba(209, 10, 66, 0.2);
 }
 
 .advantages-card--four {
@@ -3262,6 +3263,7 @@ button,
   .advantages__center-block {
     max-width: 442px;
     height: 239px;
+    margin: 30px 118px;
   }
 
   .advantages__center-block h2 {
@@ -3296,14 +3298,6 @@ button,
     -ms-grid-column-span: 2;
   }
 
-  .advantages__row::before {
-    display: none;
-  }
-
-  .advantages__row::after {
-    display: none;
-  }
-
   .advantages-card__number h3 {
     font-size: 58px;
     line-height: 0.9;
@@ -3318,6 +3312,10 @@ button,
     margin: 0;
   }
 
+  .advantages-card--one::before {
+    display: none;
+  }
+
   .advantages-card--two {
     margin: 0;
     margin-top: 12px;
@@ -3327,6 +3325,10 @@ button,
     margin: 0;
     margin-top: 1px;
     margin-left: 15px;
+  }
+
+  .advantages-card--three::before {
+    display: none;
   }
 
   .advantages-card--four {
@@ -3851,6 +3853,7 @@ button,
   }
 
   .advantages__center-block {
+    margin: 0;
     margin-top: 42px;
     margin-bottom: 45px;
   }
