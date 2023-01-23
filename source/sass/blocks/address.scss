@@ -46,12 +46,16 @@
   position: relative;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  row-gap: 19px;
+  row-gap: 16px;
   column-gap: 60px;
 
   grid-template-areas:
     "card1 card3"
     "card2 card4";
+
+  @media (max-width: 1199px) {
+    row-gap: 18px;
+  }
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;

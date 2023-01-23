@@ -140,7 +140,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: minmax(163.5px, auto);
-  // grid-auto-rows: 164px;
   grid-template-areas:
     "card1 centralblock card3"
     "card2 centralblock card4";

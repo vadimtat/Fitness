@@ -2661,11 +2661,11 @@ button,
   display: grid;
   -ms-grid-columns: 2fr 60px 1fr;
   grid-template-columns: 2fr 1fr;
-  row-gap: 19px;
+  row-gap: 16px;
   -webkit-column-gap: 60px;
   -moz-column-gap: 60px;
   column-gap: 60px;
-  -ms-grid-rows: auto 19px auto;
+  -ms-grid-rows: auto 16px auto;
   grid-template-areas: "card1 card3" "card2 card4";
 }
 
@@ -3404,7 +3404,7 @@ button,
 
   .contacts {
     min-height: 648px;
-    padding-bottom: 59px;
+    padding-bottom: 62px;
     --grad-stop: 48%;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(16, 38, 84)), to(transparent));
     background-image: -o-linear-gradient(top, rgb(16, 38, 84) var(--grad-stop), transparent var(--grad-stop));
@@ -3455,6 +3455,10 @@ button,
     margin-bottom: 32px;
     font-size: 42px;
     line-height: 50px;
+  }
+
+  .address__row {
+    row-gap: 18px;
   }
 
   .address__row::before {
@@ -3519,7 +3523,7 @@ button,
   }
 
   .footer {
-    padding-top: 33px;
+    padding-top: 30px;
     padding-bottom: 32px;
   }
 
