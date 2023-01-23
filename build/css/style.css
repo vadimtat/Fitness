@@ -2144,7 +2144,7 @@ button,
 
 .stock__left-block {
   max-width: 560px;
-  min-height: 462px;
+  max-height: 462px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3958,7 +3958,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    min-height: none;
+    max-height: none;
   }
 
   .stock__promo {

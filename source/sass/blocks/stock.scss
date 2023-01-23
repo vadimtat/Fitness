@@ -59,7 +59,7 @@
 
 .stock__left-block {
   max-width: 560px;
-  min-height: 462px;
+  max-height: 462px;
   display: flex;
 
   @media (max-width: 1199px) {
@@ -73,7 +73,7 @@
     width: none;
     max-width: none;
     flex-direction: column;
-    min-height: none;
+    max-height: none;
   }
 }
 
