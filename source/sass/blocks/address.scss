@@ -49,21 +49,13 @@
   row-gap: 16px;
   column-gap: 60px;
 
-  grid-template-areas:
-    "card1 card3"
-    "card2 card4";
-
   @media (max-width: 1199px) {
     row-gap: 18px;
   }
 
   @media (max-width: 767px) {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "card1"
-      "card2"
-      "card3"
-      "card4";
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -169,18 +161,20 @@
   }
 }
 
-.address__card--one {
-  grid-area: card1;
-}
-
 .address__card--two {
-  grid-area: card2;
+  @media (max-width: 767px) {
+    order: 1;
+  }
 }
 
 .address__card--three {
-  grid-area: card3;
+  @media (max-width: 767px) {
+    order: 0;
+  }
 }
 
 .address__card--four {
-  grid-area: card4;
+  @media (max-width: 767px) {
+    order: 2;
+  }
 }
